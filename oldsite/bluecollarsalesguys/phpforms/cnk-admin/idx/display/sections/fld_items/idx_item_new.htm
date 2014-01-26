@@ -1,0 +1,108 @@
+        <tr>
+          <td>
+
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <span class="options_header"><#L_fldit_new_items#></span>
+                 </td>
+               </tr>
+
+               <!-- New Item -->
+               <tr>
+                 <td bgcolor="#AFAFAF">
+
+                   <table border="0" width="100%" cellpadding="0" cellspacing="1">
+                     <tr>
+                       <td width="35%" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                          <span class="options_header"><#L_fldit_title#></span>
+                       </td>
+                       <td width="30%" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                          <span class="options_header"><#L_fldit_value#></span>
+                       </td>
+                       <td width="35%" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                          <span class="options_header">&nbsp;</span>
+                       </td>
+                     </tr>
+
+                     <tr bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                       <td bgcolor="#efefef" style="padding:1px">
+                         <input type="text" name="item_title" style="width:100%" value="">
+                       </td>
+                       <td bgcolor="#efefef" style="padding:1px">
+                         <input type="text" name="item_value" style="width:100%" value="">
+                       </td>
+
+<input type="hidden" name="item_id" value="<#new_item_id#>">
+<script language="JavaScript">
+<!--
+function AddItemClick()
+{
+   var form = document.getElementById('pf_opts');
+   document.getElementById('action_id').value = "<#add_item_action#>";
+   form.submit();
+}
+-->
+</script>
+                       <td bgcolor="#efefef" style="padding:1px" align="center">
+                         <input type="button" class="add_item_btn" value="<#L_btn_fldit_add_item#>" onClick="AddItemClick();">
+                       </td>
+                     </tr>
+
+                   </table>
+
+                 </td>
+               </tr>
+               <!-- /New Item -->
+
+               <!-- Predefined Items -->
+               <tr>
+                 <td bgcolor="#AFAFAF">
+
+                   <table border="0" width="100%" cellpadding="0" cellspacing="1">
+                     <tr>
+                       <td width="65%" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                          <span class="options_header"><#L_fldit_predefined#></span>
+                       </td>
+                       <td width="35%" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                          <span class="options_header">&nbsp;</span>
+                       </td>
+                     </tr>
+
+                     <tr bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                       <td bgcolor="#efefef" style="padding:1px">
+                         <select name="pre_list" id="pre_list" style="width:100%">
+                          <#pre_select#>
+                         </select>
+
+                       </td>
+
+<script language="JavaScript">
+<!--
+function AddPreItemsClick()
+{
+   var form = document.getElementById('pf_opts');
+   var list = document.getElementById('pre_list');
+   if ( list.value!='' )
+   {
+      document.getElementById('action_id').value = "<#add_pre_items#>";
+      form.submit();
+   } else return false;
+}
+-->
+</script>
+
+                       <td bgcolor="#efefef" style="padding:1px" align="center">
+                         <input type="button" class="add_item_btn" value="<#L_btn_fldit_add_predefined#>" onClick="AddPreItemsClick();">
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+               <!-- /Predefined Items -->
+
+             </table>
+
+          </td>
+        </tr>

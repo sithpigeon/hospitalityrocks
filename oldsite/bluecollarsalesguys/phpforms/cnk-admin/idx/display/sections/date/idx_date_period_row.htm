@@ -1,0 +1,29 @@
+<script language="JavaScript">
+<!--
+function CheckIfLess()
+{
+   var SelFrom = document.getElementById('from_id_zx2345');
+   var SelTo   = document.getElementById('to_id_zx2345');
+   if ( SelFrom.selectedIndex > SelTo.selectedIndex )
+   {
+      SelTo.selectedIndex = SelFrom.selectedIndex;
+   }
+}
+-->
+</script>
+
+                           <tr>
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_fldopts_date_period#>
+                             </td>
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;>
+                                <span id="span_id_from"><#L_common_from#></span>
+                                <select name="year_from" id="from_id_zx2345" onChange="CheckIfLess();">
+                                <#items_from_select#>
+                                </select>
+                                <span id="span_id_to"><#L_common_to#></span>
+                                <select name="year_to" id="to_id_zx2345" onChange="CheckIfLess();">
+                                <#items_to_select#>
+                                </select>
+                             </td>
+                           </tr>

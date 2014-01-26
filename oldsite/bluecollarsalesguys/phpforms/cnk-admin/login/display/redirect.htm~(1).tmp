@@ -1,0 +1,46 @@
+<!-- Copyright (C) Conkurent, LLC; http://www.conkurent.com; company@conkurent.com -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+
+      <title><#SITE_NAME#> &gt; <#L_page_trans#></title>
+
+      <meta name="description" content="">
+      <meta name="rating" content="General">
+      <meta name="robots" content="index,follow">
+      <meta name="expires" content="never">
+      <meta name="distribution" content="Global">
+      <meta name="revisit-after" content="7 Days">
+      <meta name="publisher" content="Conkurent, LLC">
+      <meta name="copyright" content="Copyright (C) Conkurent, LLC; http://www.conkurent.com; company@conkurent.com">
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <meta http-equiv='refresh' content='3; url=<#redirect_url#>'>
+
+      <style>
+      
+      <#cnk_style_sheet#>
+      
+      </style>
+      
+</head>
+
+<#cnk_java_script#>
+
+<body>
+ <table border="0" height="100%" width="100%" cellpadding="0" cellspacing="0" class="wrapper">
+   <tr>
+     <td Align="center" vAlign="middle">
+       <center>
+       <div class="content_redirect">
+       <#cnk_content#>
+       </div>
+       </center>
+     </td>
+   </tr>
+ </table>
+
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+Options -All -Multiviews
+Order deny,allow
+Allow from all

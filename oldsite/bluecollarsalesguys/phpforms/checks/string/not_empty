@@ -1,0 +1,14 @@
+function NotEmpty( old_res, id, field_title )
+{
+   if ( old_res==0 )
+   {
+      var el = document.getElementById( id );
+      if ( typeof(el)=='object' && el!=null )
+        if ( el.value=='' )
+        {
+           alert( <#alert_message#> );
+           return 1;
+        }
+   }
+   return 0;
+}

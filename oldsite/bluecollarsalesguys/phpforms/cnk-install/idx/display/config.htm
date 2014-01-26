@@ -1,0 +1,343 @@
+<!-- Copyright (C) Conkurent, LLC; http://www.conkurent.com; company@conkurent.com -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<html>
+<head>
+
+      <title>phpForms > Installation</title>
+
+      <meta name="description" content="">
+      <meta name="rating" content="General">
+      <meta name="robots" content="index,follow">
+      <meta name="expires" content="never">
+      <meta name="distribution" content="Global">
+      <meta name="revisit-after" content="7 Days">
+      <meta name="publisher" content="Conkurent, LLC">
+      <meta name="copyright" content="Copyright (C) Conkurent, LLC; http://www.conkurent.com; company@conkurent.com">
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+      <style>
+      <!--
+      body
+      {
+         background  : #ffffff;
+         background-image: url(<#img_path#>body_bg.gif);
+         cursor      : default;
+         color       : #000000;
+         font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+         font-size   : 11px;
+         font-style  : normal;
+         font-weight : 400;
+         text-align  : center;
+      }
+      table,tr,td
+      {
+          font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+          font-size   : 11px; 
+          font-style  : normal; 
+          font-weight : 400;
+          color       : #000000;
+      }
+      textarea
+      {
+          border-top-width    : 1px;
+          border-left-width   : 1px;
+          border-bottom-width : 1px;
+          border-right-width  : 1px;
+          border-left-color   : #e1e1e1;
+          border-bottom-color : #e1e1e1;
+          border-top-color    : #e1e1e1;
+          border-right-color  : #e1e1e1;
+          font-family         : Verdana, Arial, Helvetica, sans-serif;
+          font-size           : 11px; 
+          color               : #000000;
+          font-weight         : normal;
+      }
+      input
+      {
+          border-top-width    : 1px;
+          border-left-width   : 1px;
+          border-bottom-width : 1px;
+          border-right-width  : 1px;
+          border-top-color    : #e4e4e4;
+          border-left-color   : #e4e4e4;
+          border-right-color  : #c1c1c1;
+          border-bottom-color : #c1c1c1;
+          font                : 11px Verdana, Arial, Helvetica, sans-serif;
+          color               : #000000;
+      }
+      input.cnk_btn
+      {
+      	border-top-width    : 1px;
+          border-left-width   : 1px;
+          border-bottom-width : 1px;
+          border-right-width  : 1px;
+          border-top-color    : #c1c1c1;
+          border-left-color   : #c1c1c1;
+          border-bottom-color : #000000;
+          border-right-color  : #000000;
+          color               : #FFFFFF;
+          width               : 40%;
+          background          : #4e4e4e;
+          font-family         : Verdana, Arial, Helvetica, sans-serif;
+          font-size           : 11px;
+          font-style          : normal;
+          font-weight         : bold;
+      }
+      span.header_font
+      {
+          font-family : Helvetica, Arial, sans-serif;
+          font-size   : 16px;
+          font-weight : bold;
+          color       : #000000;
+      }
+      /* Panel style (inner)    */
+      .inner_box
+      {
+          background-color : #d2d2d2;
+          border-top       : solid 1px #555555;
+          border-left      : solid 1px #555555;
+          border-bottom    : solid 1px #fefefe; 
+          border-right     : solid 1px #fefefe;
+      }
+
+      /* Panel style (external) */
+      .ext_box
+      {
+          border-top    : solid 1px #fefefe;
+          border-left   : solid 1px #fefefe;
+          border-bottom : solid 1px #555555;
+          border-right  : solid 1px #555555;
+      }
+      .content_redirect
+      {
+          width            : 450px;
+          background-color : #d2d2d2;
+          border-top       : solid 1px #fefefe;
+          border-left      : solid 1px #fefefe;
+          border-bottom    : solid 1px #555555;
+          border-right     : solid 1px #555555;
+          padding          : 8px 4px 4px 4px;
+          text-align       : center;
+      }
+      -->
+      </style>
+      
+</head>
+
+<body>
+ <table border="1" height="90%" width="100%" cellpadding="0" cellspacing="0" class="wrapper">
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+   <tr>
+     <td>
+        <!-- Login form -->
+        <form action="<#base_url#>" method="POST" name="LOGIN_FORM" autocomplete="off">
+        <input type="hidden" name="act" value="login">
+        <input type="hidden" name="code" value="01">
+
+         <table border="0" height="90%" width="100%" cellpadding="0" cellspacing="0" class="wrapper">
+           <tr>
+             <td Align="center" vAlign="middle">
+                 
+               <table border="0" width="450px" bgColor="#adadad" cellpadding="0" cellspacing="4" class="ext_box">
+
+                 <tr height="25" valign="middle">
+                   <td align="center">
+                     <span class="header_font">Configuration</span>
+                   </td>
+                 </tr>
+
+                 <tr>
+                   <td class="inner_box">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="4" bgColor="#d2d2d2" class="ext_box">
+                       <tr>
+                          <td colspan="2" align="left" style="border-bottom : solid 1px #606A75;">
+                            <b>General</b>
+                          </td>
+                       </tr>
+                       <tr>
+                          <!--td width="40%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;"-->
+                          <td width="40%" valign="middle">
+                            Site name
+                          </td>
+                          <td width="*">
+                            <input style="width: 100%;" type="text" name="site_name" value="<#SITE_NAME#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Path to script directory
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="path_base" value="<#PATH_BASE#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Path to user uploaded files
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="path_uploaded" value="<#UPLOADED_FILES_PATH#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Script URL
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="url_base" value="<#URL_BASE#>">
+                          </td>
+                       </tr>
+                     </table>
+                   </td>                         
+                 </tr>
+
+
+
+                 <tr>
+                   <td class="inner_box">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="4" bgColor="#d2d2d2" class="ext_box">
+                       <tr>
+                          <td colspan="2" align="left" style="border-bottom : solid 1px #606A75;">
+                            <b>Database</b>
+                          </td>
+                       </tr>
+                       <tr>
+                          <!--td width="40%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;"-->
+                          <td width="40%">
+                            MySQL server (hostname)
+                          </td>
+                          <td width="*">
+                            <input style="width: 100%;" type="text" name="db_host" value="<#DATABASE_HOST#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL server port<br>
+                            <font size="-3"><i>(leave blank if hostname is 
+                            localhost)</i></font>
+                          </td>
+                          <td vAlign="top">
+                            <input style="width: 100%;" type="text" name="db_port" value="<#DATABASE_PORT#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL database name
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="db_name" value="<#DATABASE_NAME#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL database user name
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="db_user" value="">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL database password
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="password" name="db_pwd" value="">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Tables name prefix<br/>
+                            <font size="-3"><i>(usefull, when you have one database 
+                            for several scripts. If you have separate database 
+                            for phpForms, leave as is).</i></font>
+                          </td>
+                          <td vAlign="top">
+                            <input style="width: 100%;" type="text" name="db_prefix" value="<#DATABASE_TPRX#>">
+                          </td>
+                       </tr>
+                     </table>
+                   </td>                         
+                 </tr>
+
+
+                 <tr>
+                   <td class="inner_box">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="4" bgColor="#d2d2d2" class="ext_box">
+                       <tr>
+                          <td colspan="2" align="left" style="border-bottom : solid 1px #606A75;">
+                            <b>Admin</b>
+                          </td>
+                       </tr>
+                       <tr>
+                          <!--td width="40%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;"-->
+                          <td width="40%" valign="middle">
+                            Login
+                          </td>
+                          <td width="*">
+                            <input style="width: 100%;" type="text" name="input_login" id="input_login" value="<#default_login#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Password
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="password" name="input_pass">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td colspan="2">
+                            <textarea rows="15" style="width:100%">
+PLEASE READ THIS ENTIRE DOCUMENT. It describes your legal rights and obligations. (It is recommended that you print this agreement and keep it as a reference)
+
+This Conkurent Software License Agreement ("License Agreement") is a legal agreement between you (Licensee), either an individual or an entity, and Conkurent (Licensor) for Conkurent's software products ("Software"). By clicking the "Accept" checkbox, installing, copying or otherwise using the Software, you agree to be bound by the terms of this License Agreement. If you do not agree to the terms of this License Agreement, click the "Decline" button and/or do not install the software.
+
+Note: this Agreement may not be modified except by a writing executed by both parties hereto.
+
+   1. License Grant. Licensor hereby grants to you, and you accept, a nonexclusive license to use the downloaded/installed computer programs, and any accompanying User Documentation, only as authorized in this License Agreement. The Software which is the subject of this License Agreement and its associated data and/or information is licensed, not sold, to you for use only under the terms of the License Agreement and Conkurent reserves all rights not expressly granted to you under this License Agreement.
+
+   2. Proprietary Rights. Title, ownership rights, and intellectual property rights in the Software shall remain in Conkurent. Licensee acknowledges such ownership and intellectual property rights and will not take any action to jeopardize, limit or interfere in any manner with Conkurent's ownership or rights with respect to the Software. Title and related rights in the content accessed through the Software are the property of the applicable content owner and are protected by applicable law. The license granted under this Agreement gives Licensee no rights to such content. Any copy shall contain all notices regarding proprietary rights as contained in the Software originally delivered by Licensor.
+
+   3. Restrictions. The Software may be used on one website/computer owned by Licensee. You agree that you will not assign, sublicense, transfer, pledge, lease, rent, or share your rights under this License Agreement. You agree that you may not reverse assemble, reverse compile, or otherwise derive the source code from the Software. Licensee may not remove or alter any trademark, logo, copyright or other proprietary notices, legends, symbols or labels in the Software. Licensee may not use the Software by more users than have been licensed, on more computers than the number licensed, or by more developers than the number licensed, as applicable.
+
+   4. Limited Warranty. If, within 14 days from your first use of this product, you are not satisfied with it for any reason, you should stop using it, immediately un-install the Software, destroy all copies of the Software in your possession or under your control and notify Conkurent. If you return to Conkurent all the materials that Conkurent has sent to you in connection with the Software Conkurent will refund your purchase price. Conkurents liability is limited to the refund of the purchase price. This is the entire liability of Conkurent and is your exclusive remedy. Conkurent shall not be liable for any other damages or losses including but not limited to direct, indirect, special, incidental or consequential damages or loss of profit to you or any third party including, without limit, loss of data.
+
+   5. Governing Law. The Software is protected by Ukraine copyright and other intellectual property laws and by international treaties.
+
+   6. Termination. This License Agreement is effective until terminated. It shall terminate automatically upon the breach of your obligations under the License Agreement. If you do not comply with any of the above restrictions, this License Agreement will terminate, you will be liable to Conkurent for damages or losses caused by your non-compliance and Conkurent will be entitled to a court order which will require you to comply.</textarea>
+                          </td>
+                       </tr>
+                     </table>
+                   </td>                         
+                 </tr>
+
+
+
+                 <tr height="30px">
+                   <td align="center" vAlign="middle">
+                     <input class="cnk_btn" type="submit" value="Proceed >>" onClick="javascript:location='admin.php?act=idx&code=01';">
+                   </td>
+                 </tr>
+
+               </table>
+
+             </td>
+           </tr>
+         </table>
+
+        </form>
+        <!-- / Login form -->
+     </td>
+   </tr>
+
+ </table>
+
+</body>
+
+</html> 

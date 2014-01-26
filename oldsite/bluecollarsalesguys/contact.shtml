@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+
+<title>Email The Guys</title>
+<meta name="description" content="Put the success and fun back into selling.  No farming – No cold calls – No BS. Just straight talk, with simple things, you can do now, to grow your sales today!">
+<meta name="keywords" CONTENT="blue collar sales guys, fun in selling, fun selling, Minnesota sales seminar, Getz, Stevie Ray, Stuart Gray, Up Yours Selling">
+<meta name="author" content="Tom Getz Guetzke, Stevie Ray, Stuart Gray" />
+<meta name="copyright" content="Blue Collar Sales Guys, LLC" />
+<meta name="revisit-after" content="14 days">
+<meta name="robots" content="index,follow">
+<meta name="GOOGLEBOT" content="index,follow"> 
+
+
+
+<link href="css/bcsg.css" rel="stylesheet" type="text/css" />
+
+
+
+<!--[if lte IE 7]><link href="css/bcsgie7.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+
+
+<!--[if lte IE 6]><link href="css/bcsgie6.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+<!--#include virtual="header.shtml" -->
+
+<div id="container">
+
+<table align="center" cellpadding="0" cellspacing="0" id="contentcontainer">
+  <tr>
+    <td rowspan="2" valign="top" id="leftcolumn">
+    <div class="sidecapsule">
+        <div class="sidecapsuletop">
+          <h2><center>The Guys</center></h2>
+        </div>
+        <div class="sidecapsulecontent">
+          <p><img src="images/stu_happy.jpg"/></p>
+           <p><img src="images/guyandcup.jpg"/></p>
+           <p><img src="images/group.jpg"/></p>
+        </div>
+<div class="sidecapsulebottom">
+  </div>
+      </div>
+      <div id="sidecapsuledivider"></div>
+      <center>
+      </center>  
+   </td>
+<td id="content" valign="top">
+      <h1 align="left">Our Corporate Headquarters in Savage, Minnesota!</h1>
+      <p align="center"><img src="../images/corporate_headquarters.gif" width="267" height="176" /></p>
+      <p>We look forward to helping you with proven simple ideas that work and that you can start doing today!</p>
+      <p class="bold">Our mailing address:</p>
+      <p> Blue Collar Sales Guys, LLC<br />
+        8160 County Road 42, Suite 300-327<br />
+        Savage, MN 55378-2199</p>
+      <p>Give us a call at <span class="bold">888-940-BLUE (2583).</span></p>
+      <p>Or, if you want to drop us a line, click below to e-mail us right now!</p>
+      <p align="center"><a href="email.shtml"><img src="images/bluecollarsales_emailtheguys.gif" width="299" height="75" /></a></p>
+      </td>
+    <td rowspan="2" valign="top" id="rightcolumn">
+	<!--editor note - to change the content of right column, change the include filename below-->
+	<!--#include virtual="right_sidebar.shtml" --></td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <!--editor note - leave this alone -->
+    <!--#include virtual="sharethis.shtml" -->
+    </td>
+    </tr>
+</table>
+</div>
+
+<!--#include virtual="footer.shtml" -->
+
+
+
+</body>
+
+
+
+</html>
+
+
+

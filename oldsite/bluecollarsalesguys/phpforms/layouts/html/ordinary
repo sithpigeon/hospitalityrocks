@@ -1,0 +1,8 @@
+      <tr>
+          <td width="30%" align="left" bgcolor="<#field_color#>" valign="top">
+             <span style="<#caption_style#>"><#field_caption#></span><#required#>
+          </td>
+          <td width="70%" align="left" bgcolor="<#field_color#>">
+             <#field_control#>
+          </td>
+      </tr>

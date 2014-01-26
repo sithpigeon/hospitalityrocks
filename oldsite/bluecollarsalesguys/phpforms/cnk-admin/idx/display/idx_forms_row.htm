@@ -1,0 +1,22 @@
+             <!-- Forms Row -->
+             <tr>
+               <td bgcolor="#efefef">
+                  <#form_name#>
+               </td>
+               <td bgcolor="#efefef" align="center">
+                  <#pages_count#>
+               </td>
+               <td bgcolor="#efefef" align="center">
+                  <#fields_count#>
+               </td>
+               <td bgcolor="#efefef" align="center">
+                  <#form_action#>
+               </td>
+               <td bgcolor="#efefef" align="center">
+                  <a href="admin.php?act=idx&code=03&fid=<#form_id#>" title="<#L_alt_frm_edit_fields#>"><img src="<#img_path#>b_edit.gif" border="0"></a>
+                  <a href="admin.php?act=idx&code=01&fid=<#form_id#>" title="<#L_alt_frm_edit_options#>"><img src="<#img_path#>b_options.gif" border="0"></a>
+                  <a href="#" onClick="window.open('<#preview_url#>','frm_preview', 'toolbar=1,status=0,menubar=0,scrollbars=1,resizable=1,width=730,height=490'); return false;" title="<#L_alt_frm_preview#>"><img src="<#img_path#>b_view.gif" border="0"></a>
+                  <a href="#" onClick="window.open('<#get_code_url#>','frm_preview', 'toolbar=1,status=0,menubar=0,scrollbars=1,resizable=1,width=730,height=490'); return false;" title="<#L_alt_frm_get_code#>"><img src="<#img_path#>b_code.gif" border="0"></a>
+                  <a href="admin.php?act=idx&code=01d&fid=<#form_id#>" title="<#L_alt_frm_delete#>" onClick="javascript:return( window.confirm('<#L_phr_are_u_sure#>'));"><img src="<#img_path#>b_del.gif" border="0"></a>
+               </td>
+             </tr>

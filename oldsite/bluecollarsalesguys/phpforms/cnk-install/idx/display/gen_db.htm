@@ -1,0 +1,122 @@
+               <table border="0" width="450px" bgColor="#adadad" cellpadding="0" cellspacing="4" class="ext_box">
+
+<form action="install.php" method="POST">
+<input type="hidden" name="act"  value="idx">
+<input type="hidden" name="code" value="02">
+                 <tr height="25" valign="middle">
+                   <td align="center">
+
+                     <span class="header_font">Configuration</span>
+                   </td>
+                 </tr>
+
+                 <tr>
+                   <td class="inner_box">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="4" bgColor="#d2d2d2" class="ext_box">
+                       <tr>
+                          <td colspan="2" align="left" style="border-bottom : solid 1px #606A75;">
+                            <b>General</b>
+                          </td>
+                       </tr>
+                       <tr>
+                          <!--td width="40%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;"-->
+                          <td width="40%" valign="middle">
+                            Site name
+                          </td>
+                          <td width="*">
+                            <input style="width: 100%;" type="text" name="site_name" value="<#SITE_NAME#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Path to script directory
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="path_base" value="<#PATH_BASE#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Path to user uploaded files
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="path_uploaded" value="<#UPLOADED_FILES_PATH#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            Script URL
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="url_base" value="<#URL_BASE#>">
+                          </td>
+                       </tr>
+                     </table>
+                   </td>                         
+                 </tr>
+
+
+
+                 <tr>
+                   <td class="inner_box">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="4" bgColor="#d2d2d2" class="ext_box">
+                       <tr>
+                          <td colspan="2" align="left" style="border-bottom : solid 1px #606A75;">
+                            <b>Database</b>
+                          </td>
+                       </tr>
+                       <tr>
+                          <td width="40%">
+                            MySQL server (hostname)
+                          </td>
+                          <td width="*">
+                            <input style="width: 100%;" type="text" name="db_host" value="<#DATABASE_HOST#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL server port<br>
+                            <font size="-3"><i>(leave blank if hostname is 
+                            localhost)</i></font>
+                          </td>
+                          <td vAlign="top">
+                            <input style="width: 100%;" type="text" name="db_port" value="<#DATABASE_PORT#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL database name
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="db_name" value="<#DATABASE_NAME#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL database user name
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="text" name="db_user" value="<#DATABASE_USERNAME#>">
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            MySQL database password
+                          </td>
+                          <td>
+                            <input style="width: 100%;" type="password" name="db_pass" value="<#DATABASE_PASSWORD#>">
+                          </td>
+                       </tr>
+                     </table>
+                   </td>                         
+                 </tr>
+
+
+                 <tr height="30px">
+                   <td align="center" vAlign="middle">
+                     <input class="cnk_btn" type="submit" value="Proceed >>">
+                   </td>
+                 </tr>
+</form>
+
+               </table>

@@ -1,0 +1,144 @@
+body
+{
+    background  : #ffffff;
+    background-image: url(<#img_path#>body_bg.gif);
+    cursor      : default;
+    color       : #000000;
+    font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 11px;
+    font-style  : normal;
+    font-weight : 400;
+    text-align  : center;
+}
+
+table,tr,td
+{
+    font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 11px; 
+    font-style  : normal; 
+    font-weight : 400;
+    color       : #000000;
+}
+
+table.wrapper
+{
+    background  : transparent;
+}
+
+
+img
+{
+    border: 0px;
+}
+
+a:link, a:visited, a:active
+{
+	background-color: transparent;
+	color: #0000ff;
+	text-decoration: none;
+}
+
+a:hover
+{
+    background-color: transparent;
+    color: #000000;
+    text-decoration: underline;
+}
+
+a.extlnk, a.extlnk:active, a.extlnk:visited, a.extlnk:hover
+{
+    text-decoration : none;
+    color: #777777;
+}
+
+.content_redirect
+{
+    width            : 450px;
+    background-color : #d2d2d2;
+    border-top       : solid 1px #fefefe;
+    border-left      : solid 1px #fefefe;
+    border-bottom    : solid 1px #555555;
+    border-right     : solid 1px #555555;
+    padding          : 8px 4px 4px 4px;
+    text-align       : center;
+}
+
+input
+{
+	border-top-width    : 1px;
+    border-left-width   : 1px;
+    border-bottom-width : 1px;
+    border-right-width  : 1px;
+    border-top-color    : #e4e4e4;
+	border-left-color   : #e4e4e4;
+    border-right-color  : #c1c1c1;
+    border-bottom-color : #c1c1c1;
+    font                : 11px Verdana, Arial, Helvetica, sans-serif;
+    color               : #000000;
+}
+
+input.submit {
+    background-color: #4E4E4E;
+    border: 1px solid #000000;
+    font-size: 10px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* Main button style */
+input.cnk_btn
+{
+	border-top-width    : 1px;
+    border-left-width   : 1px;
+    border-bottom-width : 1px;
+    border-right-width  : 1px;
+    border-top-color    : #c1c1c1;
+	border-left-color   : #c1c1c1;
+    border-bottom-color : #000000;
+    border-right-color  : #000000;
+    color               : #FFFFFF;
+    width               : 40%;
+    background          : #4e4e4e;
+    font-family         : Verdana, Arial, Helvetica, sans-serif;
+    font-size           : 11px;
+    font-style          : normal;
+    font-weight         : bold;
+}
+
+/* Style of panel header */
+span.header_font
+{
+    font-family : Helvetica, Arial, sans-serif;
+    font-size   : 16px;
+    font-weight : bold;
+    color       : #000000;
+}
+
+span.app_info
+{
+    font-family : Helvetica, Arial, sans-serif;
+	text-align  : center;
+    font-size   : 10px;
+    color       : #777777;
+	background-color: transparent;
+}
+
+
+/* Panel style (inner)    */
+.inner_box
+{
+    background-color : #d2d2d2;
+    border-top       : solid 1px #555555;
+    border-left      : solid 1px #555555;
+    border-bottom    : solid 1px #fefefe; 
+    border-right     : solid 1px #fefefe;
+}
+
+/* Panel style (external) */
+.ext_box
+{
+    border-top    : solid 1px #fefefe;
+    border-left   : solid 1px #fefefe;
+    border-bottom : solid 1px #555555;
+    border-right  : solid 1px #555555;
+}

@@ -1,0 +1,1366 @@
+/* CSS Document */
+
+/* BODY */
+
+
+body{
+border: thin black solid;
+background: #0269ab;
+text-align: center;
+margin: 0 auto;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+min-width: 897px;
+}
+
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;	
+}
+
+
+/* SHARE THIS */
+
+#sharethis {
+width:150px;
+margin:auto;
+padding-top:8px;
+padding-bottom:12px;
+}
+
+
+/* MAIN CONTAINER DIV */
+
+#container {
+
+margin: 0 auto;
+width: 100%;
+overflow: hidden;
+background: #0269ab;
+}
+
+/* HEADER DIV */
+
+#header {
+margin: 0 auto;
+width: 897px;
+background-color: #026aa9;
+}
+
+#header-image {
+width:897px;
+height:167px;
+margin:auto;
+background-image: url(../images/header3.png);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+#header-tagline {
+width:275px;
+font-family:Tahoma;
+font-size:36px;
+font-weight:bold;
+color:#FFFFFF;
+margin-top:55px;
+float:right;
+}
+
+/* MENU DIV */
+
+#menu {
+width: 100%;
+height: 50px;
+margin: auto;
+margin-left: 2px;
+padding: 0;
+text-align: center;
+}
+#menu img{
+margin-left: -4px;
+}
+#awmAnchor-bcsgmenu {
+width:auto;
+margin:auto;
+}
+#toolbox{
+list-style-type:none;
+margin: 0;
+padding: 0;
+}
+#toolbox li{
+padding-bottom: 2px;
+}
+
+/* CONTENT DIVS */
+
+#contentcontainer {
+background-color:#FFFFFF;
+width:897px;
+}
+
+#content {
+font-size: 12px;
+font-weight: normal;
+text-align: left;
+padding: 10px;
+margin: 0 auto;
+}
+
+#content ul {
+font-size: 12px;
+font-weight: normal;
+list-style-type: square;
+}
+
+#content ul li {
+font-size: 12px;
+font-weight: normal;
+}
+
+/* LEFT COLUMN */
+
+#leftcolumn {
+width: 190px;
+margin: 0;
+padding: 5px;
+text-align: center;
+background-color: #A5A6AA;
+}
+
+#leftcolumn ul {
+margin: 0 0 0 20px;
+padding: 0;
+}
+
+#leftcolumn ul li {
+list-style-type: circle;
+text-align: left;
+font-size: 10px;
+}
+
+#leftcolumn ul li a {
+color: #026aa9;
+text-decoration: none;
+}
+
+#leftcolumn ul li a:hover {
+color: #FFF;
+text-decoration: none;
+}
+
+
+/* RIGHT COLUMN */
+
+#rightcolumn {
+width: 190px;
+margin: 0;
+padding: 5px;
+text-align: center;
+background-color: #A5A6AA;
+}
+
+
+/* FOOTER */
+
+#footer {
+width: 100%;
+min-height: 62px;
+background-color: #014d7b;
+color: #FFF;
+margin: 0;
+clear: both;
+}
+
+#footertxt {
+padding: 20px 5px 5px 10px;
+font-size: 10px;
+text-align: center;
+}
+
+#footertxt a {
+color: #FFF;
+text-decoration: none;
+}
+
+#footertxt a:hover {
+color: #FFF;
+text-decoration: underline;
+}
+
+
+/* HEADINGS */
+
+h1 {
+font-size: 18px;
+font-weight: bold;
+color: #014d7b;
+margin-top:0;
+}
+
+h2 {
+font-size: 16px;
+font-weight: bold;
+color: #025689;
+}
+
+h3 {
+font-size: 14px;
+font-weight: bold;
+color: #000;
+}
+
+/* LINKS */
+
+A:link {text-decoration: underline; color: #026aa9;}
+A:visited {text-decoration: none; color: #026aa9;}
+A:active {text-decoration: none; color: #026aa9}
+A:hover {text-decoration: none; color: #FEC400;}
+
+/* CONTENT CAPSULES */
+
+.sidecapsule {
+width: 180px;
+margin: 0 auto;
+background-color: #FFF;
+}
+
+.sidecapsuletop {
+width: 180px;
+height: 32px;
+background-image: url(../images/sidebarboxtop.jpg);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.sidecapsuletop h2 {
+font-size: 14px;
+font-weight: bold;
+color: #FFF;
+text-align: left;
+margin: 0;
+padding: 8px;
+}
+
+.sidecapsulecontent {
+padding: 3px;
+text-align: left;
+}
+
+.sidecapsulecontent p {
+padding: 3px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+margin-top:0;
+margin-bottom:5px;
+}
+
+.sidecapsulecontent h5 {
+margin-top:8px;
+margin-bottom:8px;
+margin-left:5px;
+}
+
+.sidecapsulebottom {
+width: 180px;
+height: 32px;
+background-image: url(../images/sidebarboxbottom.jpg);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.sidecapsulebottom p {
+padding: 8px 5px 5px 5px;
+font-size: 10px;
+font-weight: normal;
+color: #666;
+text-align: left;
+}
+
+#sidecapsuledivider {
+height:20px;
+}
+
+.contentcapsule {
+width: 285px;
+margin: 0 auto;
+background-color: #FFF;
+}
+
+/* capsule alternates for video only */
+
+.contentcapsuleblk {
+width: 285px;
+margin: 0 auto;
+background-color: #000;
+}
+
+.contentcapsulecontent1 {
+padding: 0;
+text-align: left;
+}
+
+/* end video only */
+
+.contentcapsuletop {
+width: 285px;
+height: 32px;
+background-image: url(../images/centerboxtop.jpg);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.contentcapsuletop h2 {
+font-size: 14px;
+font-weight: bold;
+color: #FFF;
+text-align: left;
+margin: 0;
+padding: 8px;
+}
+
+.contentcapsulecontent {
+padding: 3px;
+text-align: left;
+}
+
+.contentcapsulebottom {
+width: 285px;
+height: 32px;
+margin-top: -10px;
+background-image: url(../images/centerboxbottom.jpg);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.contentcapsulebottom p {
+padding: 8px 5px 5px 5px;
+font-size: 10px;
+font-weight: normal;
+color: #666;
+text-align: left;
+}
+
+/* ALIGNMENTS */
+
+.imgfltleft {
+float: left;
+padding: 12px;
+}
+
+.imgfltright {
+float: right;
+padding: 12px;
+}
+
+.imgpad {
+padding: 10px;
+}
+
+/* TEXT */
+
+.smalltxt1 {
+font-size: 9px;
+line-height: 12px;
+}
+
+.largetext1 {
+font-size: 18px;
+font-weight: bold;
+color: #5C2828;
+}
+
+.blubold {
+color: #4C6A7C;
+font-weight: bold;
+}
+
+/* INITIAL STYLES */
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+ul {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+ol {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/* OVERLAY STYLES - MAIN */
+
+.bold {
+	font-weight: bold;
+}
+.bold-highlight {
+	font-weight: bold;
+	background-color: #FFFF00;
+}
+.bold-italic {
+	font-style: italic;
+	font-weight: bold;
+}
+.bold-underline {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.bold-highlight-italic {
+	font-style: italic;
+	background-color: #FFFF00;
+	font-weight: bold;
+
+}
+.bold-highlight-underline {
+	font-weight: bold;
+	background-color: #FFFF00;
+	text-decoration: underline;
+}
+.bold-highlight-italic-underline {
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.bold-italic-underline {
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.highlight {
+	background-color: #FFFF00;
+}
+.highlight-underline {
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.italic {
+	font-style: italic;
+}
+.italic-highlight {
+	font-style: italic;
+	background-color: #FFFF00;
+}
+.italic-underline {
+	font-style: italic;
+	text-decoration: underline;
+}
+.italic-highlight-underline {
+	font-style: italic;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.underline {
+	text-decoration: underline;
+}
+.strikethrough {
+	text-decoration: line-through;
+}
+.strikethrough-bold {
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.strikethrough-highlight {
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.strikethrough-italic {
+	font-style: italic;
+	text-decoration: line-through;
+}
+.strikethrough-bold-highlight {
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.strikethrough-bold-italic {
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.strikethrough-bold-highlight-italic {
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.strikethrough-highlight-italic {
+	font-style: italic;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+
+/* OVERLAY STYLES - BLACK */
+
+.black {
+	color: #000000;
+}
+.black-bold {
+	color: #000000;
+	font-weight: bold;
+}
+.black-bold-highlight {
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFFF00;
+}
+.black-bold-italic {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+}
+.black-bold-underline {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.black-bold-highlight-italic {
+	color: #000000;
+	font-style: italic;
+	background-color: #FFFF00;
+	font-weight: bold;
+}
+.black-bold-highlight-underline {
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFFF00;
+	text-decoration: underline;
+}
+.black-bold-highlight-italic-underline {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.black-bold-italic-underline {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.black-highlight {
+	color: #000000;
+	background-color: #FFFF00;
+}
+.black-highlight-underline {
+	color: #000000;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.black-italic {
+	color: #000000;
+	font-style: italic;
+}
+.black-italic-highlight {
+	color: #000000;
+	font-style: italic;
+	background-color: #FFFF00;
+}
+.black-italic-underline {
+	color: #000000;
+	font-style: italic;
+	text-decoration: underline;
+}
+.black-italic-highlight-underline {
+	color: #000000;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.black-underline {
+	color: #000000;
+	text-decoration: underline;
+}
+.black-strikethrough {
+	color: #000000;
+	text-decoration: line-through;
+}
+.black-strikethrough-bold {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.black-strikethrough-highlight {
+	color: #000000;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.black-strikethrough-italic {
+	color: #000000;
+	font-style: italic;
+	text-decoration: line-through;
+}
+.black-strikethrough-bold-highlight {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.black-strikethrough-bold-italic {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.black-strikethrough-bold-highlight-italic {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.black-strikethrough-highlight-italic {
+	color: #000000;
+	font-style: italic;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+
+/* OVERLAY STYLES - WHITE */
+
+.white {
+	color: #FFFFFF;
+}
+.white-bold {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.white-bold-highlight {
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFFF00;
+}
+.white-bold-italic {
+	color: #FFFFFF;
+	font-style: italic;
+	font-weight: bold;
+}
+.white-bold-underline {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.white-bold-highlight-italic {
+	color: #000000;
+	font-style: italic;
+	background-color: #FFFF00;
+	font-weight: bold;
+}
+.white-bold-highlight-underline {
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFFF00;
+	text-decoration: underline;
+}
+.white-bold-highlight-italic-underline {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.white-bold-italic-underline {
+	color: #FFFFFF;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.white-highlight {
+	color: #000000;
+	background-color: #FFFF00;
+}
+.white-highlight-underline {
+	color: #000000;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.white-italic {
+	color: #FFFFFF;
+	font-style: italic;
+}
+.white-italic-highlight {
+	color: #000000;
+	font-style: italic;
+	background-color: #FFFF00;
+}
+.white-italic-underline {
+	color: #FFFFFF;
+	font-style: italic;
+	text-decoration: underline;
+}
+.white-italic-highlight-underline {
+	color: #000000;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.white-underline {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.white-strikethrough {
+	color: #FFFFFF;
+	text-decoration: line-through;
+}
+.white-strikethrough-bold {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.white-strikethrough-highlight {
+	color: #000000;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.white-strikethrough-italic {
+	color: #FFFFFF;
+	font-style: italic;
+	text-decoration: line-through;
+}
+.white-strikethrough-bold-highlight {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.white-strikethrough-bold-italic {
+	color: #FFFFFF;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.white-strikethrough-bold-highlight-italic {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.white-strikethrough-highlight-italic {
+	color: #000000;
+	font-style: italic;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+
+/* OVERLAY STYLES - RED */
+
+.red {
+	color: #CC0000;
+}
+.red-bold {
+	color: #CC0000;
+	font-weight: bold;
+}
+.red-bold-highlight {
+	color: #CC0000;
+	font-weight: bold;
+	background-color: #FFFF00;
+}
+.red-bold-italic {
+	color: #CC0000;
+	font-style: italic;
+	font-weight: bold;
+}
+.red-bold-underline {
+	color: #CC0000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.red-bold-highlight-italic {
+	color: #CC0000;
+	font-style: italic;
+	background-color: #FFFF00;
+	font-weight: bold;
+}
+.red-bold-highlight-underline {
+	color: #CC0000;
+	font-weight: bold;
+	background-color: #FFFF00;
+	text-decoration: underline;
+}
+.red-bold-highlight-italic-underline {
+	color: #CC0000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.red-bold-italic-underline {
+	color: #CC0000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.red-highlight {
+	color: #CC0000;
+	background-color: #FFFF00;
+}
+.red-highlight-underline {
+	color: #CC0000;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.red-italic {
+	color: #CC0000;
+	font-style: italic;
+}
+.red-italic-highlight {
+	color: #CC0000;
+	font-style: italic;
+	background-color: #FFFF00;
+}
+.red-italic-underline {
+	color: #CC0000;
+	font-style: italic;
+	text-decoration: underline;
+}
+.red-italic-highlight-underline {
+	color: #CC0000;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.red-underline {
+	color: #CC0000;
+	text-decoration: underline;
+}
+.red-strikethrough {
+	color: #CC0000;
+	text-decoration: line-through;
+}
+.red-strikethrough-bold {
+	color: #CC0000;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.red-strikethrough-highlight {
+	color: #CC0000;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.red-strikethrough-italic {
+	color: #CC0000;
+	font-style: italic;
+	text-decoration: line-through;
+}
+.red-strikethrough-bold-highlight {
+	color: #CC0000;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.red-strikethrough-bold-italic {
+	color: #CC0000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.red-strikethrough-bold-highlight-italic {
+	color: #CC0000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.red-strikethrough-highlight-italic {
+	color: #CC0000;
+	font-style: italic;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+
+/* OVERLAY STYLES - BLUE */
+
+.blue {
+	color: #0000FF;
+}
+.blue-bold {
+	color: #0000FF;
+	font-weight: bold;
+}
+.blue-bold-highlight {
+	color: #0000FF;
+	font-weight: bold;
+	background-color: #FFFF00;
+}
+.blue-bold-italic {
+	color: #0000FF;
+	font-style: italic;
+	font-weight: bold;
+}
+.blue-bold-underline {
+	color: #0000FF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.blue-bold-highlight-italic {
+	color: #0000FF;
+	font-style: italic;
+	background-color: #FFFF00;
+	font-weight: bold;
+}
+.blue-bold-highlight-underline {
+	color: #0000FF;
+	font-weight: bold;
+	background-color: #FFFF00;
+	text-decoration: underline;
+}
+.blue-bold-highlight-italic-underline {
+	color: #0000FF;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.blue-bold-italic-underline {
+	color: #0000FF;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.blue-highlight {
+	color: #0000FF;
+	background-color: #FFFF00;
+}
+.blue-highlight-underline {
+	color: #0000FF;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.blue-italic {
+	color: #0000FF;
+	font-style: italic;
+}
+.blue-italic-highlight {
+	color: #0000FF;
+	font-style: italic;
+	background-color: #FFFF00;
+}
+.blue-italic-underline {
+	color: #0000FF;
+	font-style: italic;
+	text-decoration: underline;
+}
+.blue-italic-highlight-underline {
+	color: #0000FF;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.blue-underline {
+	color: #0000FF;
+	text-decoration: underline;
+}
+.blue-strikethrough {
+	color: #0000FF;
+	text-decoration: line-through;
+}
+.blue-strikethrough-bold {
+	color: #0000FF;
+	font-weight: bold;
+
+	text-decoration: line-through;
+}
+.blue-strikethrough-highlight {
+	color: #0000FF;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.blue-strikethrough-italic {
+	color: #0000FF;
+	font-style: italic;
+	text-decoration: line-through;
+}
+.blue-strikethrough-bold-highlight {
+	color: #0000FF;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.blue-strikethrough-bold-italic {
+	color: #0000FF;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.blue-strikethrough-bold-highlight-italic {
+	color: #0000FF;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.blue-strikethrough-highlight-italic {
+	color: #0000FF;
+	font-style: italic;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+
+/* OVERLAY STYLES - GREEN */
+
+.green {
+	color: #006600;
+}
+.green-bold {
+	color: #006600;
+	font-weight: bold;
+}
+.green-bold-highlight {
+	color: #006600;
+	font-weight: bold;
+	background-color: #FFFF00;
+}
+.green-bold-italic {
+	color: #006600;
+	font-style: italic;
+	font-weight: bold;
+}
+.green-bold-underline {
+	color: #006600;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.green-bold-highlight-italic {
+	color: #006600;
+	font-style: italic;
+	background-color: #FFFF00;
+	font-weight: bold;
+}
+.green-bold-highlight-underline {
+	color: #006600;
+	font-weight: bold;
+	background-color: #FFFF00;
+	text-decoration: underline;
+}
+.green-bold-highlight-italic-underline {
+	color: #006600;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.green-bold-italic-underline {
+	color: #006600;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.green-highlight {
+	color: #006600;
+	background-color: #FFFF00;
+}
+.green-highlight-underline {
+	color: #006600;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.green-italic {
+	color: #006600;
+	font-style: italic;
+}
+.green-italic-highlight {
+	color: #006600;
+	font-style: italic;
+	background-color: #FFFF00;
+}
+.green-italic-underline {
+	color: #006600;
+	font-style: italic;
+	text-decoration: underline;
+}
+.green-italic-highlight-underline {
+	color: #006600;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: #FFFF00;
+}
+.green-underline {
+	color: #006600;
+	text-decoration: underline;
+}
+.green-strikethrough {
+	color: #006600;
+	text-decoration: line-through;
+}
+.green-strikethrough-bold {
+	color: #006600;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.green-strikethrough-highlight {
+	color: #006600;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.green-strikethrough-italic {
+	color: #006600;
+	font-style: italic;
+	text-decoration: line-through;
+}
+.green-strikethrough-bold-highlight {
+	color: #006600;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.green-strikethrough-bold-italic {
+	color: #006600;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.green-strikethrough-bold-highlight-italic {
+	color: #006600;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+.green-strikethrough-highlight-italic {
+	color: #006600;
+	font-style: italic;
+	text-decoration: line-through;
+	background-color: #FFFF00;
+}
+
+/* OVERLAY STYLES - FONTS */
+
+.all-caps {
+	text-transform: uppercase;
+}
+.all-lowercase {
+	text-transform: lowercase;
+}
+.all-firstlettercaps {
+	text-transform: capitalize;
+}
+.font-Georgia {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.font-Courier {
+	font-family: "Courier New", Courier, "Times New Roman", mono;
+}
+.font-Geneva {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+.font-Trebuchet {
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+.font-Impact {
+	font-family: 'Impact', Verdana, Arial, Helvetica, sans-serif;
+}
+.font-ComicSans {
+	font-family: 'Comic Sans MS', Georgia, "Times New Roman", Times, serif;
+}
+
+/* TESTIMONIAL BOX */
+
+#testimonial-container    {
+               			   width:80%;
+						   margin:auto;
+						   padding-top:10px;
+						   padding-bottom:10px;
+						   }
+						   
+#testimonial-box          {
+                          width:100%;
+						  margin:auto;
+						  border:1px #333333 solid;
+						  background-color:#FFFFCC;
+						  }
+						  
+#testimonial-content      {
+                           width:90%;
+						   margin:auto;
+						   padding-top:10px;
+						   padding-bottom:10px;
+						   }
+						   
+						   
+#testimonial-content h3    {
+                          font-family:Tahoma;
+						  color:#CC0000;
+						  font-size:18px;
+						  line-height:20px;
+						  text-align:center;
+						  margin-top:0px;
+						  }
+
+#testimonial-content p    {
+						  font-size:14px;
+						  line-height:16px;
+						  text-indent:0em;
+						  }
+						  
+.testifier-name			{
+						font-family:Arial, Helvetica, sans-serif;
+						font-size:12px;
+						font-weight:bold;
+						}
+						
+						
+/* DASHED BOX */
+
+#dashedbox-container    {
+               			   width:80%;
+						   margin:auto;
+						   padding-top:10px;
+						   padding-bottom:10px;
+						   }
+						   
+#dashedbox-box          {
+                          width:100%;
+						  margin:auto;
+						  border:2px #333333 dashed;
+						  background-color:#FFFFCC;
+						  }
+						  
+#dashedbox-content      {
+                           width:90%;
+						   margin:auto;
+						   padding-top:10px;
+						   padding-bottom:10px;
+						   }
+						   
+						   
+#dashedbox-content h3    {
+                          font-family:Tahoma;
+						  color:#CC0000;
+						  font-size:18px;
+						  line-height:20px;
+						  text-align:center;
+						  margin-top:0px;
+						  }
+
+#dashedbox-content p    {
+						  font-size:14px;
+						  line-height:16px;
+						  text-indent:0em;
+						  }
+						  
+/* HYPERLINKS */
+
+a {
+	color: #014c79;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #FEC400;
+	text-decoration: none;
+}
+
+a:active {
+	color: #014c79;
+	text-decoration: underline;
+}
+
+
+/* IMAGES */
+
+.imgspace {
+padding: 1px 5px 0 5px;
+}
+
+.imgfltleft {
+float: left;
+padding-right: 10px;
+padding-bottom: 10px;
+}
+
+.imgfltrght {
+float: right;
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
+#salesltr-dontmiss {
+width:90%;
+margin:auto;
+background-color:#000099;
+padding:10px;
+}
+
+#salesltr-dontmiss h3 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:28px;
+color:#FFCC33;
+font-style:italic;
+margin-top:0;
+margin-bottom:0;
+}
+
+#salesltr-dontmiss h5 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:38px;
+color:#FFFFFF;
+font-style:italic;
+margin-top:0;
+margin-bottom:0;
+}
+
+.earlybird-disclaimer {
+font-size:10px;
+color:#FFFFFF;
+}
+
+#event-dates {
+width:90%;
+margin:auto;
+border: 1px solid #666666;
+padding:10px;
+}
+
+.event-date {
+font-size:20px;
+color:#CC3300;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+}
+
+.event-earlybirdend {
+font-size:10px;
+font-style:italic;
+color:#999999;
+margin-left:10px;
+}
+
+.orange {
+color:#FFCC33;
+}
+
+.orange-bold {
+color:#FFCC33;
+font-weight:bold;
+}
+
+.orange-bold-italic {
+color:#FFCC33;
+font-weight:bold;
+font-style:italic;
+}

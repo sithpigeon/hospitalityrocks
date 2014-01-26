@@ -1,0 +1,22 @@
+a:link, a:visited, a:active {
+	background-color: transparent;
+	color: #648EDB;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: transparent;
+	color: #648EDB;
+	text-decoration: underline;
+}
+
+
+p.copyright {
+	background-color: transparent;
+	color: #808080;
+	font-size: 9px;
+	line-height: 120%;
+	padding: 6px;
+	text-align: left;
+}
+

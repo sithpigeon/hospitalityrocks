@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Collpasible Menu Test</title>
+	<script src="dbMenu.js" type="text/javascript">
+
+	/***********************************************
+	* DbMenu script- by David Boggus: http://www.boggusweb.com/
+	* Please keep this notice intact
+	* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
+	***********************************************/
+
+	</script>
+	<link href="global.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="collapse.css" type="text/css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+	<ul id="menu" class="dbMenu">
+        <li><a href="http://www.javascriptkit.com">Home</a></li>
+		<li>News
+            <ul>
+				<li><a href="http://www.cnn.com">CNN</a></li>
+        <li><a href="http://news.bbc.co.uk">BBC News</a></li>
+        <li><a href="http://abcnews.com">ABC News</a></li>
+            </ul>
+		</li>
+
+	    <li>Web Design
+            <ul>
+                <li><a href="http://javascriptkit.com">JavaScipt Kit</a></li>
+                <li><a href="http://dynamicdrive.com">Dynamic Drive</a></li>
+                <li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+                <li><a href="http://www.codingforums.com">Coding Forums</a></li>
+            </ul>
+	    </li>
+	    <li><a href="http://javascriptkit.com/jsref/">JS Reference</a></li>
+	    <li><a href="http://javascriptkit.com/domref/">DOM Reference</a></li>
+
+	</ul>
+
+<p>Sub menu shown onClick instead of onMouseover, due to lack of "onMouse" class inside main UL element.</p>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<script language="JavaScript">
+<!--
+function ChangeDemoColor()
+{
+   var val = document.getElementById('page_color').value;
+   var rgb = '';
+   if (val!='') rgb = '#'+val.substr(4,6);
+   document.getElementById('tab_clr').style.backgroundColor = rgb;
+}
+
+function CheckFields()
+{
+   var err = isNumber('<#L_idx_left_form_width#>','f_width' );
+   err += isNotEmpty( '<#L_idx_left_form_name#>', 'form_name' );
+   if (err==0) document.form_opts.submit();
+}
+
+function isNumber( FieldText, id )
+{
+   var el = document.getElementById(id);
+   if (el != null)
+   {
+      trimmed = el.value.replace(/\s+$/, '');
+      trimmed =  trimmed.replace(/^\s+/, '');
+
+      if ( trimmed!='' && isNaN(trimmed) )
+      {
+         alert( FieldText +' '+'<#L_idx_mes_must_be_number#>' ); return 1;
+      }
+      else return 0;
+   }
+}
+
+function isNotEmpty( FieldText, id )
+{
+   var  el = document.getElementById(id);
+   trimmed = el.value.replace(/\s+$/, '');
+   trimmed = trimmed.replace(/^\s+/, '');
+
+   if ( trimmed=='' )
+   {
+      alert( FieldText +' '+'<#L_idx_mes_must_be_filled#>' ); return 1;
+   } else return 0;
+}
+-->
+</script>
+
+        <tr>
+          <td>
+
+             <!-- Page options -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ext_box">
+               <tr>
+                 <td valign="top">
+
+                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                       <td>
+                         <!-- Page Options -->
+                         <table border="0" cellpadding="0" cellspacing="1" bgcolor="#efefef" width="100%">
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pgopts_page_title#>
+                             </td>
+                             <td width="70%">
+                                <input type="text" name="page_title" value="<#page_title#>" style="width:100%">
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pgopts_top_text#>
+                             </td>
+                             <td>
+                                <textarea name="top_text" style="width:100%;" rows=4><#page_top_text#></textarea>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom: solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pgopts_bottom_text#>
+                             </td>
+                             <td>
+                                <textarea name="bottom_text" style="width:100%;" rows=4><#page_bottom_text#></textarea>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pgopts_page_color#>
+                             </td>
+                             <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                   <td style="width:60%;">
+                                     <select name='page_color' id='page_color' onChange='ChangeDemoColor();' style="width:100%;">
+                                        <option value=''><#L_common_default_color#></option>
+                                        <#color_select#>
+                                     </select>
+                                   </td>
+                                   <td id="tab_clr" width="40%">
+                                     <table id="tab_clr" width="100%"  style="border:1px solid #000000;">
+                                       <tr>
+                                         <td>&nbsp;</td>
+                                       </tr>
+                                     </table>
+                                   </td>
+                                 </tr>
+                                </table>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pgopts_page_width#>
+                             </td>
+                             <td width="70%">
+                                <input type="text" name="page_width" value="<#page_width#>" style="width:100%">
+                             </td>
+                           </tr>
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pgopts_prev_button#>
+                             </td>
+                             <td width="70%">
+                                <input type="text" name="btn_prev" value="<#btn_prev#>" style="width:100%">
+                             </td>
+                           </tr>
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pgopts_next_button#>
+                             </td>
+                             <td width="70%">
+                                <input type="text" name="btn_next" value="<#btn_next#>" style="width:100%">
+                             </td>
+                           </tr>
+
+                         </table>
+                         <!-- /Page Options -->
+
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- / Page options -->
+
+          </td>
+        </tr>

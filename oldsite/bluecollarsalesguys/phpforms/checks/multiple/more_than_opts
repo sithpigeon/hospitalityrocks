@@ -1,0 +1,17 @@
+function MoreThanOpts( old_res, id, field_title, num )
+{
+   if ( old_res==0 )
+   {
+      var nActive = 0;
+      var sel = document.getElementById( id );
+      for ( i=0; i<sel.options.length; i++)
+        if (sel.options[i].selected) nActive++;
+
+      if ( nActive <= num )
+      {
+         alert( <#alert_message#> );
+         return 1;
+      }
+   }
+   return 0;
+}

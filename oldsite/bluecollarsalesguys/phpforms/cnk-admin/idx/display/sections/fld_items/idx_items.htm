@@ -1,0 +1,91 @@
+        <tr>
+          <td>
+
+             <!-- Field Items -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <a class="a_options_header" href="javascript:ShowHidePage('itemlist_sec_zx679830');" title="<#L_alt_fldit_show_hide#>"><#L_fldit_items#></a>
+                 </td>
+               </tr>
+
+               <tr id="itemlist_sec_zx679830">
+                 <td>
+                   <table border="0" width="100%" cellpadding="0" cellspacing="1">
+
+                      <!-- "No items" section -->
+                      <tr style="display:<#no_items_display#>">
+                        <td width="35%" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px" colspan="3">
+                           <span class="options_header"><#L_phr_no_items#></span>
+                        </td>
+                      </tr>
+                      <!-- /"No items" section -->
+
+                      <tr style="display:<#items_display#>">
+                        <td bgcolor="#AFAFAF">
+
+                          <table border="0" width="100%" valign="middle" cellpadding="0" cellspacing="1">
+                            <tr>
+<script language="JavaScript">
+<!--
+function SelectAllItems()
+{
+   var value  = document.getElementById('sel_all_zx2341').checked;
+   var aItems = new Array(<#cb_item_ids#>);
+   var it     = null;
+
+   for (i=0; i<aItems.length; i++)
+   {
+      it = document.getElementById( aItems[i] );
+      if ( typeof(it)=='object' && it!=null ) it.checked = value;
+   }
+}
+
+function DeleteSelected()
+{
+   var form = document.getElementById('pf_opts');
+   var act  = document.getElementById('action_id');
+       act.value = '<#it_del_mult#>';
+   if ( confirm("<#L_phr_are_u_sure#>") ) form.submit();
+   return false;
+}
+-->
+</script>
+                              <td width="1%"  bgcolor="#8F95AA" align="center" style="padding:0px">
+                                 <input type="checkbox" id="sel_all_zx2341" class="cb_litt" onClick="SelectAllItems();">
+                              </td>
+                              <td width="34%" bgcolor="#8F95AA" align="center" style="padding:0px">
+                                 <span class="options_header"><#L_fldit_title#></span>
+                              </td>
+                              <td width="30%" bgcolor="#8F95AA" align="center" style="padding:0px">
+                                 <span class="options_header"><#L_fldit_value#></span>
+                              </td>
+                              <td width="15%" bgcolor="#8F95AA" align="center" style="padding:0px">
+                                 <span class="options_header"><#L_fldit_checked#></span>
+                              </td>
+                              <td width="20%" bgcolor="#8F95AA" align="center" style="padding:0px">
+                                 <span class="options_header"><#L_common_command#></span>
+                              </td>
+                            </tr>
+                                  <#T_items_rows#>
+                            <tr>
+                              <td bgcolor="#8F95AA" valign="middle" align="center" style="padding:0px">
+                                 <a href="#" title="<#L_alt_fldit_del_sel#>" onClick="DeleteSelected();"><img src="<#img_path#>b_del.gif" border="0"></a>
+                              </td>
+                              <td colspan="4" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                                 <span class="options_header">&nbsp;</span>
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                      </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- /Field Items -->
+
+          </td>
+        </tr>

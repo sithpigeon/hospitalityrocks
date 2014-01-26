@@ -1,0 +1,38 @@
+function CheckLeapYear( id )
+{
+   var aDaysNum = Array( 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 );
+   var id_cut   = id.substr( 6, id.length-6 );
+   var day_sel   = document.getElementById( 'fld_d_' + id_cut );
+   var month_sel = document.getElementById( 'fld_m_' + id_cut );
+   var year_sel  = document.getElementById( 'fld_y_' + id_cut );
+
+   if ( typeof(day_sel)=='object' && day_sel!=null )
+    if ( typeof(month_sel)=='object' && month_sel!=null )
+     if ( typeof(year_sel)=='object' && year_sel!=null )
+     {
+        if ( month_sel.selectedIndex==1 )
+        {
+          if ( year_sel.value % 400==0 || (year_sel.value % 100!=0 && year_sel.value % 4==0) ) aDaysNum[1] = 29;
+        }
+        var day_sel_ix = day_sel.selectedIndex;
+        day_sel.options.length = 0;
+
+        for ( i=1; i<=aDaysNum[month_sel.selectedIndex]; i++ )
+        {
+           if ( document.createElement )
+           {
+              var newOpt = document.createElement( "OPTION" );
+              newOpt.text = i;
+              newOpt.value = i;
+              ( day_sel.options.add ) ? day_sel.options.add(newOpt) : day_sel.add(newOpt, null);
+           }
+           else
+           {
+              day_sel.options[i-1] = new Option( i, i, false, false );
+           }
+        }
+        if ( day_sel.options.length < (day_sel_ix+1) )
+           day_sel.selectedIndex = day_sel.options.length-1;
+        else day_sel.selectedIndex = day_sel_ix;
+     }
+}

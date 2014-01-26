@@ -1,0 +1,17 @@
+.dbMenu .subMenu{
+	background-image:url('down.gif');
+	background-position:bottom right;
+}
+.dbMenu li{
+	float:left;
+	width:10em;
+}
+.dbMenu li ul{
+	position:absolute;
+	top:1.3em;
+	left:0px;
+	width:10em;
+}
+.dbMenu li ul li{
+	float:none;
+}

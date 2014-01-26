@@ -1,0 +1,86 @@
+<script language="JavaScript">
+<!--
+function ChangeDemoColor()
+{
+   var val = document.getElementById('field_color').value;
+   var rgb = '';
+   if (val!='') rgb = '#'+val.substr(4,6);
+   document.getElementById('tab_clr').style.backgroundColor = rgb;
+}
+-->
+</script>
+
+        <tr>
+          <td>
+
+             <!-- Field HTML options -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <span class="options_header"><#L_adv_html#></span>
+                 </td>
+               </tr>
+
+               <tr>
+                 <td valign="top">
+
+                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                       <td>
+                         <table border="0" cellpadding="0" cellspacing="1" bgcolor="#efefef" width="100%">
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_adv_html_fld_color#>
+                             </td>
+
+                             <td width="70%">
+                                <table border="0" cellPadding="0" cellSpacing="0" width="100%">
+                                 <tr>
+                                   <td width="60%" vAlign="middle">
+                                     <select name='field_color' id='field_color' onChange='ChangeDemoColor();' style="width:100%;">
+                                        <option value=''><#L_common_default_color#></option>
+                                        <#color_select#>
+                                     </select>
+                                   </td>
+                                   <td id="tab_clr" width="40%">
+                                     <table id="tab_clr" width="100%"  style="border:1px solid #000000;">
+                                       <tr>
+                                         <td>&nbsp;</td>
+                                       </tr>
+                                     </table>
+                                   </td>
+                                 </tr>
+                                </table>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom: solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_adv_html_caption_style#>
+                             </td>
+                             <td>
+                                <input type="text" name="caption_style" value="<#caption_style#>" style="width:100%">
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom: solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_adv_html_control_style#>
+                             </td>
+                             <td>
+                                <input type="text" name="control_style" value="<#control_style#>" style="width:100%">
+                             </td>
+                           </tr>
+
+                           <#additional_rows#>
+
+                         </table>
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- /Field HTML options -->
+
+          </td>
+        </tr>

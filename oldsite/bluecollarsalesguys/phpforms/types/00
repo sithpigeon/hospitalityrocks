@@ -1,0 +1,1 @@
+<input type="text" name="<#name#>" <#max_length#> <#str_size#> id="<#name#>" value="<#default#>" style="<#style#>">

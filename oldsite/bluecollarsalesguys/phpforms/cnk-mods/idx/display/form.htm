@@ -1,0 +1,52 @@
+<!-- phpForms.net form BEGIN -->
+<style>
+<!--
+.phpForms_pgtitle
+{
+    font-family : Arial;
+    font-size   : 18px;
+    color       : #1200d9;
+    font-weight : bold;
+}
+.phpForms_btn
+{
+    border-top-width    : 1px;
+    border-left-width   : 1px;
+    border-bottom-width : 1px;
+    border-right-width  : 1px;
+    border-top-color    : #e4e4e4;
+    border-left-color   : #e4e4e4;
+    border-right-color  : #c1c1c1;
+    border-bottom-color : #c1c1c1;
+    font                : Verdana, Arial, Helvetica, sans-serif;
+    color               : #000000;
+}
+-->
+</style>
+
+<script language="JavaScript">
+<!--
+var aIds = Array( <#pages_list#> );
+function ChangePage( to_hide, to_show )
+{
+   var tbl_hide = document.getElementById( aIds[to_hide] );
+   var tbl_show = document.getElementById( aIds[to_show] );
+
+   if ( typeof(tbl_hide)=='object' && tbl_hide!=null )
+    if ( typeof(tbl_show)=='object' && tbl_show!=null )
+    {
+       tbl_hide.style.display = 'none';
+       tbl_show.style.display = '';
+    }
+}
+<#js_funcs#>
+-->
+</script>
+
+<form name="<#form_name#>" id="<#form_name#>" method="POST" enctype="multipart/form-data" action="<#form_url#>" onSubmit="return false;">
+<#hidden_form_data#>
+<#max_file_size#>
+<#form_data#>
+</form>
+
+<!-- /phpForms.net form END -->

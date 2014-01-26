@@ -1,0 +1,37 @@
+
+<form name="ext_opts" id="ext_opts" action="admin.php" method="POST">
+
+<input type="hidden" name="act"    value="idx">
+<input type="hidden" name="code"   value="<#code_num#>">
+<input type="hidden" name="<#ext_param#>"   value="<#ext_param_id#>" id="param_id">
+<input type="hidden" name="<#ext_param1#>"   value="<#ext_param1_id#>" id="param1_id">
+
+
+      <table border="0" bgcolor="#adadad" cellpadding="0" cellspacing="4" width="100%" class="ext_box">
+
+        <tr height="25">
+          <td align="center">
+              <!-- Page Wrapper Header -->
+              <span class="header_font"><#L_ext_opts_header#></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="inner_box">
+            <table border="0" width="100%" cellpadding="0" cellspacing="2" bgcolor="#d2d2d2">
+               <!-- Sections -->
+               <#T_field_opt_sections#>
+               <!-- /Sections -->
+            </table>
+          </td>
+        </tr>
+
+        <tr height="40px">
+          <td align="center" valign="middle">
+            <input type="submit" class="cnk_btn" value="<#L_common_save#>">
+            <#button_advanced#>
+          </td>
+        </tr>
+
+      </table>
+</form>

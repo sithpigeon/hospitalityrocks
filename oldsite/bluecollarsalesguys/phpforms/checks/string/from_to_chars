@@ -1,0 +1,14 @@
+function FromToChars( old_res, id, field_title, from, to )
+{
+   if ( old_res==0 )
+   {
+      var el = document.getElementById( id );
+      if ( typeof(el)=='object' && el!=null )
+        if ( el.value.length < from || el.value.length > to )
+        {
+           alert( <#alert_message#> );
+           return 1;
+        }
+   }
+   return 0;
+}

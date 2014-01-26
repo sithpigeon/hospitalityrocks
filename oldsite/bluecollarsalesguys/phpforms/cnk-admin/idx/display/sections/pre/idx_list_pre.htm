@@ -1,0 +1,166 @@
+<script language="JavaScript">
+<!--
+function SelectAllItems()
+{
+   var value  = document.getElementById('sel_all_zx2341').checked;
+   var aItems = new Array(<#cb_pr_ids#>);
+   var it     = null;
+
+   for (i=0; i<aItems.length; i++)
+   {
+      it = document.getElementById( aItems[i] );
+      if ( typeof(it)=='object' && it!=null ) it.checked = value;
+   }
+}
+
+function DeleteSelected()
+{
+   var form = document.getElementById('ext_opts');
+   var act  = document.getElementById('param_id');
+       act.value = '<#pr_del_mult#>';
+   if ( confirm("<#L_phr_are_u_sure#>") ) form.submit();
+   return false;
+}
+
+function OnAddNItems()
+{
+   var form = document.getElementById('ext_opts');
+   var nums = document.getElementById('items_num');
+
+   if ( typeof(form)=='object' && form!=null && typeof(nums)=='object' && nums!=null )
+     if ( nums.value!='' && nums.value!='0' )
+     {
+        window.location.href = '<#self_href#>' + '&list_id=<#list_id#>&pre_act=add&num=' + nums.value;
+     }
+}
+-->
+</script>
+        <tr>
+          <td>
+
+             <!-- General Pre Options -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <span class="options_header"><#L_common_general#></span>
+                 </td>
+               </tr>
+
+               <tr>
+                 <td valign="top">
+
+                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                       <td>
+                         <!-- List Options -->
+                         <table border="0" cellpadding="0" cellspacing="1" bgcolor="#efefef" width="100%">
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pre_list_name#>
+                             </td>
+                             <td width="*">
+                                <input type="text" name="list_name" value="<#list_name#>" style="width:250px">
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_pre_add_items#>
+                             </td>
+                             <td>
+                                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                     <td width="30%">
+                                        <select name="items_num" id="items_num" style="width:100%">
+                                          <#items_num_select#>
+                                        </select>
+                                     </td>
+                                     <td width="40%" align="center">
+                                        <input type="button" class="add_item_btn" value="<#L_btn_pre_add_N_items#>" onClick="OnAddNItems();">
+                                     </td>
+                                  </tr>
+                                 </table>
+                             </td>
+                           </tr>
+                         </table>
+                         <!-- /List Options -->
+
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- /General Pre Options -->
+
+          </td>
+        </tr>
+
+        <!-- Break -->
+
+        <tr>
+          <td>
+
+             <!-- List Items Options -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <span class="options_header"><#L_pre_items#></span>
+                 </td>
+               </tr>
+
+               <tr>
+                 <td valign="top">
+
+                   <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                     <tr>
+                       <td>
+                         <!-- Item List -->
+                         <table border="0" cellpadding="0" cellspacing="1" bgcolor="#afafaf" width="100%">
+
+                           <tr style="display:<#display_no_items#>">
+                              <td align="center" bgcolor="#8F95AA" width="100%">
+                                 <span class="table_small_header" style="color: #FFFFFF"><#L_phr_no_items#></span>
+                              </td>
+                           </tr>
+
+                           <tr style="display:<#display_items#>" valign="middle">
+                              <td width="1%" bgcolor="#8F95AA" align="center" style="padding: 0px;">
+                                 <input type="checkbox" class="cb_litt" id="sel_all_zx2341" onClick="SelectAllItems();">
+                              </td>
+                              <td width="35%" bgcolor="#8F95AA" align="center" style="padding: 0px;">
+                                 <span class="options_header"><#L_col_pre_title#></span>
+                              </td>
+                              <td width="*" bgcolor="#8F95AA" align="center" style="padding: 0px;">
+                                 <span class="options_header"><#L_col_pre_value#></span>
+                              </td>
+                              <td width="19%" bgcolor="#8F95AA" align="center" style="padding: 0px;">
+                                 <span class="options_header"><#L_common_command#></span>
+                              </td>
+                           </tr>
+
+                           <#T_items_rows#>
+
+                           <tr style="display:<#display_items#>">
+                              <td bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                                 <a href="#" title="<#L_alt_fldit_del_sel#>" onClick="DeleteSelected();"><img src="<#img_path#>b_del.gif" border="0"></a>
+                              </td>
+                              <td colspan="3" bgcolor="#8F95AA" valign="top" align="center" style="padding:0px">
+                                 &nbsp;
+                              </td>
+                           </tr>
+
+                         </table>
+                         <!-- /Item List -->
+
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- /List Items Options -->
+
+          </td>
+        </tr>

@@ -1,0 +1,1 @@
+<input type="checkbox" name="<#name#>[]" id="<#id#>" <#checked#> value="<#value#>" style="<#style#>"><label for="<#id#>"><#title#></label>

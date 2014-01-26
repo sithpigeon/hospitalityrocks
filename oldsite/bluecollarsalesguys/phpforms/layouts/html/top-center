@@ -1,0 +1,6 @@
+      <tr>
+          <td colspan="2" align="center" bgcolor="<#field_color#>">
+             <span style="<#caption_style#>"><#field_caption#></span><#required#><br>
+             <#field_control#>
+          </td>
+      </tr>

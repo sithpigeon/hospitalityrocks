@@ -1,0 +1,18 @@
+Jan 26 12:58:50 160.94.47.19 u55412767 Connection from 160.94.47.19 port 43590
+Jan 26 12:58:53 160.94.47.19 u55412767 Failed publickey for u55412767 from 160.94.47.19 port 43590 ssh2
+Jan 26 12:59:00 160.94.47.19 u55412767 Accepted password for u55412767 from 160.94.47.19 port 43590 ssh2
+Jan 26 17:59:01 160.94.47.19 u55412767 SFTP session started in /kunden/homepages/11/d302679306/htdocs
+Jan 26 17:59:01 160.94.47.19 u55412767 Client version 3
+Jan 26 12:59:32 160.94.47.19 u55412767 Received disconnect from 160.94.47.19: 11: disconnected by user
+Jan 26 12:59:52 160.94.47.19 u55412767 Connection from 160.94.47.19 port 43594
+Jan 26 12:59:53 160.94.47.19 u55412767 Failed publickey for u55412767 from 160.94.47.19 port 43594 ssh2
+Jan 26 12:59:56 160.94.47.19 u55412767 Accepted password for u55412767 from 160.94.47.19 port 43594 ssh2
+Jan 26 17:59:56 160.94.47.19 u55412767 SFTP session started in /kunden/homepages/11/d302679306/htdocs
+Jan 26 17:59:56 160.94.47.19 u55412767 Client version 3
+Jan 26 18:00:16 160.94.47.19 u55412767 SFTP session closing (EOF).
+Jan 26 13:00:16 160.94.47.19 u55412767 Received disconnect from 160.94.47.19: 11: disconnected by user
+Jan 26 13:00:25 160.94.47.19 u55412767 Connection from 160.94.47.19 port 43595
+Jan 26 13:00:25 160.94.47.19 u55412767 Failed publickey for u55412767 from 160.94.47.19 port 43595 ssh2
+Jan 26 13:00:33 160.94.47.19 u55412767 Accepted password for u55412767 from 160.94.47.19 port 43595 ssh2
+Jan 26 18:00:34 160.94.47.19 u55412767 SFTP session started in /kunden/homepages/11/d302679306/htdocs
+Jan 26 18:00:34 160.94.47.19 u55412767 Client version 3

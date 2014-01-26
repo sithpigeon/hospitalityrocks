@@ -1,0 +1,266 @@
+            <!-- Add & Edit Form form :) -->
+<script language="JavaScript">
+<!--
+function ChangeDemoColor()
+{
+   var val = document.form_opts.form_color.value;
+   var rgb = '';
+   if (val!='') rgb = '#'+val.substr(4,6);
+   document.getElementById('tab_clr').style.backgroundColor = rgb;
+}
+
+function ChangeFormDest()
+{
+   var dest     = document.getElementById('form_dest');
+   var tr_email = document.getElementById('tr_email_id');
+   var tr_mtpl  = document.getElementById('tr_mtpl_id');
+
+   if ( typeof(dest)=='object' && typeof(tr_email)=='object' & typeof(tr_mtpl)=='object' )
+     if ( dest!=null && tr_email!=null && tr_mtpl!=null)
+     {
+        if ( dest.value=='0' || dest.value=='2')
+        {
+           tr_email.style.display = '';
+           tr_mtpl.style.display  = '';
+        }
+        else
+        {
+           tr_email.style.display = 'none';
+           tr_mtpl.style.display  = 'none';
+        }
+     }
+}
+
+function CheckFields()
+{
+   var err = 0;
+   err += isNotEmpty( err, '<#L_idx_left_form_name#>', 'form_name' );
+   err += isNumber( err, '<#L_idx_left_form_width#>','f_width' );
+   err += isCorrectMailAndTpl( err );
+   if (err==0) document.form_opts.submit();
+}
+
+function isNumber( old_res, FieldText, id )
+{
+   if ( old_res==0 )
+   {
+      var el = document.getElementById(id);
+      if (el != null)
+      {
+         trimmed = el.value.replace(/\s+$/, '');
+         trimmed =  trimmed.replace(/^\s+/, '');
+
+         if ( trimmed!='' && isNaN(trimmed) )
+         {
+            alert( FieldText +' '+'<#L_phr_must_be_number#>' ); return 1;
+         }
+         else return 0;
+      }
+   } else return 0;
+
+}
+
+function isNotEmpty( old_res, FieldText, id )
+{
+   if ( old_res==0 )
+   {
+      var  el = document.getElementById(id);
+      trimmed = el.value.replace(/\s+$/, '');
+      trimmed = trimmed.replace(/^\s+/, '');
+
+      if ( trimmed=='' )
+      {
+         alert( FieldText +' '+'<#L_phr_must_be_filled#>' ); return 1;
+      } else return 0;
+   } else return 0;
+}
+
+function isCorrectMailAndTpl( old_res )
+{
+   if ( old_res==0 )
+   {
+      var email = document.getElementById('form_email');
+      var mtpl  = document.getElementById('form_mtpl_id');
+      var trow  = document.getElementById('tr_email_id');
+
+      var aEmails = email.value.split(',');
+      var re  = /(@.*@)|(\.\.)|(@\.)|(\.@)|(^\.)|(\.$)/;
+      var re2 = /^.+\@\[?(\w|[-.])+\.[a-zA-Z]{2,3}|[0-9]{1,3}\]?$/;
+      var bEmailOK = 1;
+      for ( i=0; i<aEmails.length; i++ )
+         bEmailOK &= ( (aEmails[i].search(re) == -1) && (aEmails[i].search(re2) != -1) );
+
+      if ( trow.style.display=='' && ( !bEmailOK || mtpl.value=='' ) )
+      {
+         return !( window.confirm('<#L_phr_frm_mtpl_email#>') );
+      } else return 0;
+   }
+}
+-->
+</script>
+
+<form name="form_opts" action="admin.php" method="POST">
+<input type="hidden" name="act" value="idx">
+<input type="hidden" name="code" value="02">
+<input type="hidden" name="fid" value="<#form_id#>">
+
+            <!-- View form options -->
+            <table width="100%" border="0" cellPadding="0" cellSpacing="4" bgColor="#acacac" class="ext_box">
+
+              <tr height="25px">
+                <!-- "Form Options" header -->
+                <td align="center" vAlign="middle"><span class="header_font"><#L_head_frmopts#></span></td>
+              </tr>
+
+              <tr>
+                <td valign="top" class="inner_box">
+
+                  <table border="0" cellPadding="0" cellSpacing="2" width="100%">
+                   <tr>
+                      <td>
+
+                          <table border="0" cellPadding="4" cellSpacing="1" width="100%" class="inf_pan">
+
+                            <tr>
+                               <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_name#>
+                               </td>
+                               <td width="70%">
+                                  <input type="text" name="form_name" id="form_name" style="width:100%;" maxlength="255" value="<#form_name#>">
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_color#>
+                               </td>
+                               <td>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                   <tr>
+                                     <td style="width:50%;">
+                                       <select name='form_color' onChange='ChangeDemoColor();' style="width:100%;">
+                                          <option value=''><#L_common_default_color#></option>
+                                          <#color_select#>
+                                       </select>
+                                     </td>
+                                     <td id="tab_clr" width="50%">
+                                       <table id="tab_clr" width="100%"  style="border:1px solid #000000;">
+                                         <tr>
+                                           <td>&nbsp;</td>
+                                         </tr>
+                                       </table>
+                                     </td>
+                                   </tr>
+                                  </table>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_dest#>
+                               </td>
+                               <td>
+                                  <select name='form_dest' id='form_dest' style="width:100%;" onChange="ChangeFormDest();">
+                                     <#form_dest_select#>
+                                  </select>
+                               </td>
+                            </tr>
+                            <tr id="tr_email_id">
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_email#>
+                               </td>
+                               <td>
+                                  <input type="text" name="form_email" id='form_email' style="width:100%;" value="<#form_email#>">
+                               </td>
+                            </tr>
+                            <tr id="tr_mtpl_id">
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_email_tpl#>
+                               </td>
+                               <td>
+                                  <select name='form_mtpl_id' id='form_mtpl_id' style="width:100%;">
+                                     <#form_mtpl_select#>
+                                  </select>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_width#>
+                               </td>
+                               <td>
+                                  <input type="text" name="form_width" id='f_width' style="width:100%;" maxlength="5" value="<#form_width#>">
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_after_sub_txt#>
+                               </td>
+                               <td>
+                                  <textarea name="after_text" style="width:100%;" rows="2"><#after_text#></textarea></td>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_redirect#>
+                               </td>
+                               <td>
+                                  <input type="text" name="form_redirect" style="width:100%;" maxlength="255" value="<#form_redirect#>">
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                  <#L_frmopts_form_buttons#>
+                               </td>
+                               <td>
+                                  <table border="0" width="100%" cellSpacing="1" cellPadding="0">
+                                    <tr>
+                                      <td width="33%" bgColor="#cdcdcd">
+                                          <#L_col_frmopts_default_prev#>
+                                      </td>
+                                      <td width="33%" bgColor="#cdcdcd">
+                                          <#L_col_frmopts_default_next#>
+                                      </td>
+                                      <td width="*" bgColor="#cdcdcd">
+                                          <#L_col_frmopts_default_submit#>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                         <input type="text" name="btn_prev"   id='btn_prev'   style="width:100%;" value="<#btn_prev#>">
+                                      </td>
+                                      <td>
+                                         <input type="text" name="btn_next"   id='btn_next'   style="width:100%;" value="<#btn_next#>"> 
+                                      </td>
+                                      <td>
+                                         <input type="text" name="btn_submit" id='btn_submit' style="width:100%;" value="<#btn_submit#>"> 
+                                      </td>
+                                    </tr>
+
+                                  </table>
+                               </td>
+                            </tr>
+                          </table>
+                      </td>
+                   </tr>
+                  </table>
+
+                </td>
+              </tr>
+
+              <tr height="40px">
+                <td align="center" valign="middle">
+                  <input type="button" class="cnk_btn" value="<#L_btn_frmopts_save#>" onClick="CheckFields();">
+                </td>
+              </tr>
+
+            </table>
+</form> <!-- form_opts -->
+
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                    <#L_idx_form_opts_doc#>
+                </td>
+              </tr>
+            </table>
+
+            <!-- /View form options -->
+      <!-- /Add & Edit Form form :) -->

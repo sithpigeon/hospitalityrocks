@@ -1,0 +1,18 @@
+<script language="JavaScript">
+<!--
+function CheckPage<#page_id#>()
+{
+   var nResult = 0;
+<#checks#>
+   if ( nResult == 0 )
+   {
+      if (<#last_page#>)
+      {
+         var el = document.getElementById( '<#form_id#>' );
+         if ( typeof(el)=='object' && el != null ) el.submit();
+      }
+      else ChangePage( <#to_hide#>, <#to_show#> );
+   }
+}
+-->
+</script>

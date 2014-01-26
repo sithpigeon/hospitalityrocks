@@ -1,0 +1,21 @@
+function ChLessThanOpts( old_res, nom, field_title, num, ids )
+{
+   if ( old_res==0 )
+   {
+      var nActive = 0;
+      var it = null;
+
+      for ( i=0; i<ids.length; i++ )
+      {
+         it = document.getElementById( ids[i] );
+         if ( it!=null && it.checked ) nActive++;
+      }
+
+      if ( nActive >= num )
+      {
+         alert( <#alert_message#> );
+         return 1;
+      }
+   }
+   return 0;
+}

@@ -1,0 +1,117 @@
+<script language="JavaScript">
+<!-- 
+function GetCookies()
+{
+   var sName = "<#cur_form_id#>";
+   var aCookies = document.cookie.split(';');
+   var aNameVal, aPages, tr;
+
+   for ( i=0; i<aCookies.length; i++ )
+   {
+      aNameVal = aCookies[i].split('=');
+      if ( aNameVal[0]==sName )
+      {
+         aNameVal[1] = unescape( aNameVal[1] );
+         aPages = aNameVal[1].split('^');
+
+         for ( j=0; j<aPages.length; j++ )
+         {
+            tr = document.getElementById( aPages[j] );
+            if ( tr!=null && typeof(tr)=='object' ) tr.style.display = 'none';
+         }
+         break;
+      }
+   }
+}
+
+function SetCookies()
+{
+   var expire = new Date();
+   expire.setTime(expire.getTime() + (7 * 24 * 3600000)); //(dd) (hr) (ms in hr)
+                                      
+   var tr;
+   var aPages = new Array(<#all_pages_ids#>);
+   aPages.push('itemlist_sec_zx679834'); // Item List Section id (field opts page)
+   aPages.push('itemlist_sec_zx679830'); // Item List Section id (items page)
+   var s = '';
+
+   for (i=0; i<aPages.length; i++)
+   {
+      tr = document.getElementById( aPages[i] );
+
+      if ( typeof(tr)=='object' && tr!=null )
+        if ( tr.style.display=='none' )
+        {
+           if (s!='') s += '^';
+           s += tr.id;
+        }
+   }
+
+   document.cookie = "<#cur_form_id#>" +"=" + escape(s) +
+                     "; expires=" + expire.toGMTString() ;
+}
+
+function ShowHidePage( sPageId )
+{
+   var page = document.getElementById( sPageId );
+
+   if ( typeof(page)=='object' )
+     if ( page.style.display=='none' ) page.style.display = '';
+        else page.style.display = 'none';
+
+   SetCookies();
+}
+-->
+</script>
+
+<!-- View Form Pages -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr valign="top">
+  <td width="47%">
+     <table width="100%" height="300px" border="0" cellpadding="0" cellspacing="4" bgcolor="#acacac" class="ext_box">
+      <tr height="25">
+       <td align="center"><span class="header_font"><#all_fields_header#></span></td>
+      </tr>
+
+      <tr>
+        <td valign="top" class="inner_box">
+          <table border="0" cellpadding="0" cellspacing="1" width="100%">
+            <#T_idx_all_pages#>
+          </table>
+        </td>
+      </tr>
+
+<#include_hidden_frm#>
+
+      <tr height="40">
+        <td align="center" valign="middle">
+          <input type="button" class="cnk_btn" value="<#L_btn_flds_new_field#>" onClick="javascript:window.location='<#create_new_field_href#>'">
+          <input type="button" class="cnk_btn" style="display:<#display_sec_btn#>" value="<#L_btn_flds_new_page#>" onClick="javascript:window.location='<#create_new_page_href#>'">
+        </td>
+      </tr>
+
+     </table>
+  </td>
+  <td width="*">
+     &nbsp;
+  </td>
+
+  <td width="52%">
+
+     <table border="0" height="300" cellpadding="0" cellspacing="0" width="100%">
+      <tr><!-- Right section -->
+        <td valign="top">
+            <#TL_right_section#>
+        </td>
+      </tr>
+<#notes#>
+          <!-- /Right section -->
+     </table>
+
+  </td>
+
+ </tr>
+
+
+</table>
+<!-- / View Form Pages -->

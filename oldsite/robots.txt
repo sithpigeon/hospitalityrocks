@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /blog/index.php
+Disallow: /logs/
+Disallow: /blog/
+Disallow: /Menu/
+Allow: /
+Disallow: /documents/
+Disallow: /bluecollarsalesguys/
+
+User-agent: Googlebot-Image
+Allow: /blog/images/
+Allow: /blog/index.php
+Disallow: /logs/
+Disallow: /blog/
+Disallow: /Menu/
+Allow: /
+Disallow: /documents/
+Disallow: /bluecollarsalesguys/
+

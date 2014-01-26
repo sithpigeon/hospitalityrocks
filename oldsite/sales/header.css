@@ -1,0 +1,9 @@
+div#header{
+	background: url('<?php echo $image_dir; ?>/header3.png') no-repeat top left;
+	overflow: visible;
+	}
+	
+div#nav{
+	color: #fff;
+	background: url('<?php echo $image_dir; ?>/logo_bottom6.png') no-repeat top left;
+	}

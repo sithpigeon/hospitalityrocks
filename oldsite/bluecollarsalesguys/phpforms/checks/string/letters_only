@@ -1,0 +1,17 @@
+function LettersOnly( old_res, id, field_title )
+{
+   if ( old_res==0 )
+   {
+      var el = document.getElementById( id );
+      if ( typeof(el)=='object' && el!=null )
+      {
+         var re = /^[a-zA-Z\s]+$/;
+         if (el.value.search(re) == -1 )
+         {
+            alert( <#alert_message#> );
+            return 1;
+         }
+      }
+   }
+   return 0;
+}

@@ -1,0 +1,97 @@
+        <tr>
+          <td>
+
+             <!-- Field HTML options -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <span class="options_header"><#L_adv_layout#></span>
+                 </td>
+               </tr>
+
+               <tr>
+                 <td valign="top">
+
+                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                       <td>
+<input type="hidden" name="<#layout_hidden#>" id="layout_id" value="<#layout_value#>">
+<script language="JavaScript">
+<!--
+aLayoutIds  = Array(<#layout_ids_array#>);
+aLayoutImgs = Array(<#layout_imgs_array#>);
+sLayoutImgExt = '<#layout_extension#>';
+iCurIndex   = 0;
+
+function GetNameById( id )
+{
+   var sResult = '';
+   for (i=0; i<aLayoutIds.length; i++)
+    if ( aLayoutIds[i]==id ) 
+    {
+       sResult = aLayoutImgs[i]; iCurIndex = i; break;
+    }
+   return sResult;
+}
+
+function OnLoadSetLayout()
+{
+   var layout = document.getElementById('layout_id');
+    if ( typeof(layout)=='object' && layout!=null ) GetNameById( layout.value );
+   SetLayout();
+}
+
+function SetLayout()
+{
+   var img = document.getElementById('lay_img_zx2345');
+   var layout = document.getElementById('layout_id');
+   if ( typeof(img)=='object' && img!=null )
+    if ( typeof(layout)=='object' && layout!=null )
+    {
+       img.src      = '<#layout_imgs_dir#>' + aLayoutImgs[iCurIndex] + sLayoutImgExt;
+       layout.value = aLayoutIds[iCurIndex];
+    }
+   return false;
+}
+
+function MoveLayout( direction )
+{
+   if ( aLayoutIds.length>0 )
+   {
+      if ( direction>0 && iCurIndex!=aLayoutIds.length-1 )
+      {
+         iCurIndex++; SetLayout();
+      }
+      else if ( direction<0 && iCurIndex!=0 )
+      {
+         iCurIndex--; SetLayout();
+      }
+   }
+}
+-->
+</script>
+                         <table border="0" cellpadding="0" cellspacing="1" bgcolor="#efefef" width="100%">
+                           <tr>
+                             <td width="20%" align="center" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <a href="#" title="<#L_alt_adv_layout_prev#>" onClick="MoveLayout(-1);"><img src="<#img_path#>arrow_l.gif" border="0"></a>
+                             </td>
+                             <td width="60%" align="center" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <img id='lay_img_zx2345' height="54px" width="113px" src="<#layout_imgs_dir#><#default_img_layout#><#layout_extension#>" border="1" alt="<#L_alt_adv_layout_cur#>">
+                             </td>
+                             <td width="20%" align="center" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <a href="#" title="<#L_alt_adv_layout_next#>" onClick="MoveLayout(1);"><img src="<#img_path#>arrow_r.gif" border="0"></a>
+                             </td>
+                           </tr>
+                         </table>
+
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- /Field HTML options -->
+
+          </td>
+        </tr>

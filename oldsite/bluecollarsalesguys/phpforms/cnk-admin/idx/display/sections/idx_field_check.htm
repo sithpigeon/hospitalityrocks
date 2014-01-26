@@ -1,0 +1,118 @@
+        <tr>
+          <td>
+
+             <!-- Field Checks -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <span class="options_header"><#L_fldopts_field_check#></span>
+                 </td>
+               </tr>
+
+               <tr>
+                 <td valign="top">
+
+                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                       <td>
+                         <!-- Check rules -->
+                         <table border="0" cellpadding="0" cellspacing="1" bgcolor="#efefef" width="100%">
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_fldopts_field_check_rule#>
+                             </td>
+                             <td width="70%">
+<script language="JavaScript">
+<!--
+function ChangeRule( check_type )
+{
+   var sel       = document.getElementById( 'check_rule'   );
+   var tr_all    = document.getElementById( 'tr_id_all'    );
+   var span_from = document.getElementById( 'span_id_from' );
+   var span_to   = document.getElementById( 'span_id_to'   );
+   var sel_to    = document.getElementById( 'to_id_zx2345' );
+
+   if ( typeof(sel)=='object' && sel!=null )
+     if ( check_type==0 )
+     {
+        if ( sel.selectedIndex == sel.length-1 )
+        {
+           tr_all.style.display    = '';
+           span_from.style.display = '';
+           span_to.style.display   = '';
+           sel_to.style.display    = '';
+        }
+        else 
+        {
+           tr_all.style.display = 'none';
+        }
+     }
+     else if ( check_type==1 )
+     {
+        if ( sel.selectedIndex == 0 )
+        {
+           tr_all.style.display = 'none';
+        }
+        else if ( sel.selectedIndex != sel.length-1 )
+        {
+           tr_all.style.display    = '';
+           span_from.style.display = 'none';
+           span_to.style.display   = 'none';
+           sel_to.style.display    = 'none';
+        }
+        else
+        {
+           tr_all.style.display    = '';
+           span_from.style.display = '';
+           span_to.style.display   = '';
+           sel_to.style.display    = '';
+        }
+     }
+}
+
+function CheckIfLess()
+{
+   var SelFrom = document.getElementById('from_id_zx2345');
+   var SelTo   = document.getElementById('to_id_zx2345');
+   if ( SelFrom.selectedIndex > SelTo.selectedIndex )
+   {
+      SelTo.selectedIndex = SelFrom.selectedIndex;
+   }
+}
+-->
+</script>
+                                <select name="check_rule" id="check_rule" style="width:100%" onChange="ChangeRule(<#check_type#>);">
+                                <#check_rule_select#>
+                                </select>
+                             </td>
+                           </tr>
+                           
+                           <tr id="tr_id_all">
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_fldopts_check_interval#>
+                             </td>
+                             <td>
+                                <span id="span_id_from"><#L_common_from#></span>
+                                <select name="items_from" id="from_id_zx2345" onChange="CheckIfLess();">
+                                <#items_from_select#>
+                                </select>
+                                <span id="span_id_to"><#L_common_to#></span>
+                                <select name="items_to" id="to_id_zx2345" onChange="CheckIfLess();">
+                                <#items_to_select#>
+                                </select>
+                             </td>
+                           </tr>
+                         </table>
+                         <!-- /Check rules -->
+
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- /Field Checks -->
+
+          </td>
+        </tr>

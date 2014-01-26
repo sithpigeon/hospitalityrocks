@@ -1,0 +1,70 @@
+        <tr>
+          <td>
+
+             <!-- General field options -->
+             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: solid 1px #606A75;">
+               <tr class="options_header">
+                 <td valign="top" align="center">
+                   <span class="options_header"><#L_common_general#></span>
+                 </td>
+               </tr>
+
+               <tr>
+                 <td valign="top">
+
+                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                       <td>
+                         <!-- Field Options -->
+                         <table border="0" cellpadding="0" cellspacing="1" bgcolor="#efefef" width="100%">
+                           <tr>
+                             <td width="30%" style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_fldopts_field_name#>
+                             </td>
+                             <td width="70%">
+                                <input type="text" name="fld_name" id="fld_name" value="<#field_name#>" style="width:100%">
+                             </td>
+                           </tr>
+                           <tr style="display:<#required_display#>">
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_fldopts_required#>
+                             </td>
+                             <td>
+                                <input type="checkbox" name="fld_req" id="fld_req" <#field_required#> style="border:0px;">
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom: solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_fldopts_page#>
+                             </td>
+                             <td>
+                                <select name="fld_page" id="fld_page" style="width:100%;">
+                                 <#page_select#>
+                                </select>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td style="border-bottom : solid 1px #606A75; border-right: solid 1px #606A75;">
+                                <#L_fldopts_field_type#>
+                             </td>
+                             <td>
+                                <input type="hidden" id="fld_type_hidden" value="<#hidden_fld_type#>">
+                                <select name="fld_type" id="fld_type" style="width:100%" onChange="ChangeType();">
+                                 <#type_select#>
+                                </select>
+                             </td>
+                           </tr>
+                         </table>
+                         <!-- /Field Options -->
+
+                       </td>
+                     </tr>
+                   </table>
+
+                 </td>
+               </tr>
+             </table>
+             <!-- /General field options -->
+
+          </td>
+        </tr>

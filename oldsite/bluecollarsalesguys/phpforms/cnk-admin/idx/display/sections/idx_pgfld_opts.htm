@@ -1,0 +1,114 @@
+
+<script language="JavaScript">
+<!--
+function ChangeType()
+{
+   var form = document.getElementById('pf_opts');
+   var act  = document.getElementById('action_id');
+   var fld_sel = document.getElementById('fld_type');
+   var dtype = document.getElementById('fld_type_hidden');
+   if ( confirm("<#L_phr_change_type_conf#>") )
+   {
+      act.value = "change_type";
+      form.submit();
+   }
+   else fld_sel.value = dtype.value;
+}
+-->
+</script>
+
+<form name="pf_opts" id="pf_opts" action="admin.php" method="POST">
+
+<input type="hidden" name="act"    value="idx">
+<input type="hidden" name="code"   value="03">
+<input type="hidden" name="fid"    value="<#form_id#>">
+<input type="hidden" name="pf_id"  value="<#pf_id#>">
+<input type="hidden" name="<#action_name#>" value="<#pf_action#>" id="action_id">
+
+
+      <table border="0" bgcolor="#adadad" cellpadding="0" cellspacing="4" width="100%" class="ext_box">
+
+        <tr height="25">
+          <td align="center">
+              <!-- Page Wrapper Header -->
+              <span class="header_font"><#L_pgfld_opts_header#></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="inner_box">
+            <table border="0" width="100%" cellpadding="0" cellspacing="2" bgcolor="#D2D2D2">
+               <!-- Sections -->
+               <#T_field_opt_sections#>
+               <!-- /Sections -->
+            </table>
+          </td>
+        </tr>
+
+<script language="JavaScript">
+<!--
+function CheckFields()
+{
+   var form = document.getElementById('pf_opts');
+   var aNotEmpty = new Array( new Array(<#not_empty_fld_ids#>), 
+                              new Array(<#not_empty_fld_names#>) );
+   var aNumeric  = new Array( new Array(<#numeric_fld_ids#>), 
+                              new Array(<#numeric_fld_names#>) );
+   var err = 0;
+
+   for ( i=0; i<aNotEmpty[0].length; i++ )
+   {
+      err += isNotEmpty(aNotEmpty[1][i], aNotEmpty[0][i] );
+      if ( err!=0 ) break;
+   }
+
+   if (err==0)
+     for ( i=0; i<aNumeric[0].length; i++ )
+     {
+        err += isNumber(aNumeric[1][i], aNumeric[0][i] );
+        if ( err!=0 ) break;
+     }
+
+   if (err==0) form.submit(); else return false;
+}
+
+function isNotEmpty( FieldText, id )
+{
+   var  el = document.getElementById(id);
+   trimmed = el.value.replace(/\s+$/, '');
+   trimmed = trimmed.replace(/^\s+/, '');
+
+   if ( trimmed=='' )
+   {
+      alert( FieldText +' '+'<#L_idx_mes_must_be_filled#>' ); return 1;
+   } else return 0;
+}
+
+function isNumber( FieldText, id )
+{
+   var el = document.getElementById(id);
+   if (el != null)
+   {
+      trimmed = el.value.replace(/\s+$/, '');
+      trimmed =  trimmed.replace(/^\s+/, '');
+
+      if ( trimmed!='' && isNaN(trimmed) )
+      {
+         alert( FieldText +' '+'<#L_idx_mes_must_be_number#>' ); return 1;
+      }
+      else return 0;
+   }
+}
+-->
+</script>
+
+        <tr height="40px">
+          <td align="center" valign="middle">
+            <input type="button" class="cnk_btn" value="<#L_common_save#>" onClick="CheckFields();">
+            <#button_advanced#>
+          </td>
+        </tr>
+
+
+      </table>
+</form>
