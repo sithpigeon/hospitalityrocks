@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Hospitality ROCKS!</title>
         <link href="./libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="./addin.css" rel="stylesheet">
         <script src="./libs/jquery-2.0.3.min.js"></script>
         <script src="./libs/bootstrap/js/bootstrap.js"></script>
     </head>
@@ -14,14 +15,31 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="glyphicon glyphicon-sort"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Hospitality ROCKS!</a>
+                    <img id="brand-logo" src="assets/hospitality_rocks.png">
                 </div>
-                <div class="collapse navbar-collapse">
+                <div style="margin-top: 15px;" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <!--<li class="active"><a href="#">Home</a></li> -->
-                        <li><a href="#people">People</a></li>
-                        <li><a href="#performance">Performance</a></li>
-                        <li><a href="#profits">Profits</a></li>
+                        <li class="dropdown">
+                            <a id="dropdown1" class="dropdown-toggle" data-toggle="dropdown" href="#people">People<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown1">
+                                <li><a href="#recruitment">Recruitment</a></li>
+                                <li><a href="#retention">Retention</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a id="dropdown2" class="dropdown-toggle" data-toggle="dropdown" href="#people">Performance<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown2">
+                                <li><a href="#secret-shops">Secret Shops</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a id="dropdown3" class="dropdown-toggle" data-toggle="dropdown" href="#people">Profits<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown3">
+                                <li><a href="#consulting-services">Consulting Services</a></li>
+                                <li><a href="#sales-training">Sales Training</a></li>
+                            </ul>
+                        </li>
                         <!--<li><a href="#methodology">Methodology</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>-->
                     </ul>
@@ -31,12 +49,27 @@
 
         <div class="container">
             <div class="jumbotron">
-                <p>Some example text to throw out there.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-md-6 col-lg-7">
+                            <h2>"We align people, performance, and profit!"</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim tincidunt nulla sit amet feugiat. Morbi placerat sed ante ac elementum. Curabitur et gravida ligula. Sed quis orci malesuada, interdum enim ac, consectetur neque. </p>
+                        </div>
+                        <div class=" col-md-6 col-lg-5">
+                            <img src="assets/animated_stuart.png">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 col-md-8">Some text on the left.</div>
-                    <div class="col-sm-4 col-md-4">Some text on the right.</div>
+                    <div class=" col-md-5 col-lg-6">
+                        <p>Sed purus est, mattis et sollicitudin vel, iaculis eget risus. Proin quis massa egestas, semper neque in, semper massa. Suspendisse ac euismod massa, facilisis sagittis justo. In auctor, libero tempor interdum sollicitudin, dolor odio viverra purus, at volutpat tellus turpis eget diam. Nulla feugiat, nibh ut accumsan fermentum, nibh sem dignissim metus, commodo accumsan massa nisi non ante. Mauris fermentum faucibus mauris a placerat. Proin est nulla, laoreet in scelerisque ac, scelerisque nec magna. Vestibulum non convallis nunc, vitae laoreet tellus. Morbi tellus massa, lacinia eget justo vel, elementum sollicitudin ligula. Quisque vulputate ut nibh in eleifend. In aliquam fringilla mauris eu adipiscing. In hac habitasse platea dictumst. Nullam sem diam, tristique a elementum non, sollicitudin ac sapien.</p>
+                        <p>Nulla faucibus ante sed feugiat hendrerit. Donec in quam non sem accumsan consectetur sed sit amet elit. Morbi porttitor bibendum augue id scelerisque. Duis imperdiet diam id leo adipiscing, nec accumsan lectus bibendum. Donec blandit nec erat eu dictum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam suscipit massa vel sapien venenatis posuere. Fusce egestas vulputate porttitor. Cras imperdiet ante sed posuere vehicula. Etiam vel metus sodales augue commodo rutrum at elementum lectus.</p>
+                    </div>
+                    <div class=" col-md-7 col-lg-6">
+                        <iframe src="http://player.vimeo.com/video/33412019" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>

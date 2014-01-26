@@ -1,0 +1,15 @@
+/*
+ * purple: #530f74
+ * light purple: #cbb7d5
+ */
+#brand-logo {
+    padding: 1em;
+}
+.navbar-nav li a{
+/*    padding-top: 30px;*/
+    font-size: 18px;
+}
+.jumbotron {
+    background-color: #cbb7d5;
+    padding: 20px !important;
+}
