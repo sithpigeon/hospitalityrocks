@@ -1,0 +1,4 @@
+<select onChange="<#onchange#>" name="<#name#>" id="<#name#>" style="<#style#>">
+ <#date_select#>
+</select>
+&nbsp;

@@ -1,3 +1,0 @@
-<select name="<#name#>[]" id="<#name#>" size="<#rows#>" multiple style="<#style#>">
-  <#options_select#>
-</select>

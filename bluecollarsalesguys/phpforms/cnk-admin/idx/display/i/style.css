@@ -1,0 +1,400 @@
+body
+{
+    margin      : 0% 0%; 
+    cursor      : default;
+/*    background  : #ffffff; */
+    color       : #000000;
+    font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 11px;
+    font-style  : normal;
+    font-weight : 400;
+}
+
+.cb_litt
+{
+    width            : 13px;
+    height           : 13px;
+    border           : 0px;
+    background-color : transparent;
+}
+
+.mnu0
+{
+    border     : solid 1px #ACACAC;
+    background : #ACACAC;
+    padding    : 0px 5px 0px 5px;
+}
+
+.mnu1
+{
+    border     : solid 1px #555555;
+    background : #CCCCCC;
+    padding    : 0px 5px 0px 5px;
+}
+
+.mnu_sep
+{
+	font: 80% Verdana;
+	color: #111111;
+	padding: 0px 1px;
+}
+
+
+table.note_table
+{
+    background  : #efefef;
+    border      : 1px solid #dddddd;
+    width       : 100%;
+}
+
+td.note_td
+{
+    background  : #efefef;
+    border      : 1px solid #dddddd;
+    width       : 100%;
+}
+
+.note_table
+{
+    width   : 100%;
+    spacing : 0px;
+    padding : 4px;
+}
+
+table,tr,td
+{
+    font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 11px; 
+    font-style  : normal; 
+    font-weight : 400;
+    color       : #000000;
+}
+
+tr.options_header
+{
+    background  : #606A75;
+    border      : 1px solid #dddddd;
+    width       : 100%;
+    height      : 14px;
+}
+
+div,span,p
+{
+    font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 11px; 
+    font-style  : normal; 
+    font-weight : 400;
+    color       : #000000;
+}
+
+
+textarea
+{
+	border-top-width    : 1px;
+    border-left-width   : 1px;
+    border-bottom-width : 1px;
+    border-right-width  : 1px;
+	border-left-color   : #e1e1e1;
+    border-bottom-color : #e1e1e1;
+    border-top-color    : #e1e1e1;
+    border-right-color  : #e1e1e1;
+    font-family         : Verdana, Arial, Helvetica, sans-serif;
+    font-size           : 11px; 
+    color               : #000000;
+    font-weight         : normal;
+}
+
+
+input
+{
+	border-top-width    : 1px;
+    border-left-width   : 1px;
+    border-bottom-width : 1px;
+    border-right-width  : 1px;
+    border-top-color    : #e4e4e4;
+	border-left-color   : #e4e4e4;
+    border-right-color  : #c1c1c1;
+    border-bottom-color : #c1c1c1;
+    font                : 11px Verdana, Arial, Helvetica, sans-serif;
+    color               : #000000;
+}
+
+
+input.add_item_btn
+{
+    padding-left        : 3px;
+    padding-right       : 3px;
+    border-top-color    : #e1e1e1;
+    border-right-color  : #e1e1e1;
+	border-top-width    : 1px;
+    border-left-width   : 1px;
+    border-bottom-width : 1px;
+    border-right-width  : 1px;
+    font-family         : Verdana, Arial, Helvetica, sans-serif; 
+	font-size           : 10px;
+	font-weight         : bold;
+    color               : #e1e1e1;
+    background-color    : #606A75;
+}
+
+input.cnk_btn
+{
+	border-top-width    : 1px;
+    border-left-width   : 1px;
+    border-bottom-width : 1px;
+    border-right-width  : 1px;
+    border-top-color    : #c1c1c1;
+	border-left-color   : #c1c1c1;
+    border-bottom-color : #000000;
+    border-right-color  : #000000;
+    color               : #FFFFFF;
+    width               : 40%;
+    background          : #4e4e4e;
+    font-family         : Verdana, Arial, Helvetica, sans-serif;
+    font-size           : 11px;
+    font-style          : normal;
+    font-weight         : bold;
+}
+
+input.button
+{
+    border      : 1px;
+    font        : 11px Verdana, Arial, Helvetica, sans-serif; 
+    color       : #e1e1e1;
+    color       : #FFFFFF;
+    background  : #0D48DC;
+    font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 11px; 
+    font-style  : normal; 
+    font-weight : bold;
+}
+
+.read_fld
+{
+    width            : 100%;
+    border           : 0px;
+    background-color : transparent;
+}
+
+.read_list
+{
+    width            : 100%;
+    font-size        : 11px;
+    color            : #000000;
+    border           : 0px;
+    background-color : transparent;
+}
+
+
+a,a:active,a:visited
+{
+    font-family     : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 11px; 
+    font-style      : normal; 
+    font-weight     : 400;
+    color           : #000000; 
+    text-decoration : none;
+}
+
+a:hover
+{
+    font-family     : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 11px; 
+    font-style      : normal; 
+    font-weight     : 400;
+    color           : #000000; 
+    text-decoration : underline;
+}
+
+a.a_options_header,a.a_options_header:active,a.a_options_header:visited
+{
+    font-family     : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 10px; 
+    font-weight     : bold;
+    color           : #efefef; 
+    text-decoration : none;
+}
+
+a.a_options_header:hover
+{
+    font-family     : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 10px; 
+    font-weight     : bold; 
+    color           : #efefef;
+    text-decoration : underline;
+}
+
+a.mainlink, a.mainlink:active, a.mainlink:visited
+{
+  text-decoration : none;
+  font-weight     : bold;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #ffffff;
+}
+
+a:hover.mainlink
+{
+  text-decoration : underline;
+  font-weight     : bold;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #ffffff;
+}
+
+a.pathlink, a.pathlink:active, a.pathlink:visited
+{
+  text-decoration : none;
+  font-weight     : normal;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #000000;
+}
+
+a:hover.pathlink
+{
+  text-decoration : underline;
+  font-weight     : bold;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #111111;
+}
+
+a.a_pg_name_hint, a.a_pg_name_hint:active, a.a_pg_name_hint:visited
+{
+  text-decoration : none;
+  font-weight     : bold;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #ffffff;
+}
+
+a.a_pg_name_hint:hover
+{
+  text-decoration : underline;
+  font-weight     : bold;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #ffffff;
+}
+
+a.a_downld, a.a_downld:active, a.a_downld:visited
+{
+  text-decoration : none;
+  font-weight     : none;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #0000FF;
+}
+
+a.a_downld:hover
+{
+  text-decoration : underline;
+  font-weight     : bold;
+  font-family     : verdana;
+  font-size       : 11px;
+  color           : #0000FF;
+}
+
+span.copyright
+{
+    font-family     : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 10px; 
+    font-style      : normal; 
+    font-weight     : normal;
+    color           : #c0c0c0; 
+    text-decoration : none;
+}
+
+select
+{
+    font-family         : Verdana, Arial, Helvetica, sans-serif;
+    font-size           : 10px;
+    color               : #000000;
+}
+
+/* Style of panel header */
+span.header_font
+{
+    font-family : Helvetica, Arial, sans-serif;
+    font-size   : 16px;
+    font-weight : bold;
+    color       : #000000;
+}
+
+span.table_small_header
+{
+    font-size   : 10px;
+	font-weight : bold;
+	color       : #101010;
+}
+
+span.options_header
+{
+    font-family : 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+	font-size   : 10px;
+	font-weight : bold;
+	color       : #efefef;
+}
+
+span.table_header
+{
+	font-weight : bold;
+	color       : #000000;
+}
+
+span.table_rem
+{
+	font-style : italic;
+	color      : #000000;
+}
+
+/* Main menu links style */
+a.mnu, a.mnu:visited, 
+{
+	color           : #333333;
+	font-weight     : normal;
+	text-decoration : none;
+}
+
+a.mnu:hover, a.mnu:active
+{
+	color           : #000000;
+	font-weight     : normal;
+	text-decoration : none;
+}
+
+/* Panel style (inner)    */
+.inner_box
+{
+    background-color : #d2d2d2;
+    border-top       : solid 1px #555555;
+    border-left      : solid 1px #555555;
+    border-bottom    : solid 1px #fefefe; 
+    border-right     : solid 1px #fefefe;
+}
+
+/* Panel style (external) */
+.ext_box
+{
+    border-top    : solid 1px #fefefe;
+    border-left   : solid 1px #fefefe;
+    border-bottom : solid 1px #555555;
+    border-right  : solid 1px #555555;
+}
+
+/* Style of information panel */
+.inf_pan
+{
+    background-color : #efefef;
+    border-top    : solid 1px #fefefe;
+    border-left   : solid 1px #fefefe;
+    border-bottom : solid 1px #555555;
+    border-right  : solid 1px #555555;
+}
+
+/* Default field values */
+.default_ctrl
+{
+    width : 100%;
+}
